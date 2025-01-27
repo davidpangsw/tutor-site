@@ -1,19 +1,10 @@
-import Link from 'next/link'
- 
-function Home() {
+const Page = () => {
   return (
-    <ul>
-      <li>
-        <Link href="/">Home</Link>
-      </li>
-      <li>
-        <Link href="/about">About Us</Link>
-      </li>
-      <li>
-        <Link href="/blog/hello-world">Blog Post</Link>
-      </li>
-    </ul>
-  )
-}
- 
-export default Home
+    <div>
+      <h1>Welcome to My Website!</h1>
+      <p>This is the homepage. It's the first page you see when you visit the site.</p>
+    </div>
+  );
+};
+
+export default Page;
