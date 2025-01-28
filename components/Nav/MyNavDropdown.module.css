@@ -1,0 +1,16 @@
+.nav-dropdown :global(.dropdown-toggle::after) {
+  display: none; /* Remove arrow */
+}
+.nav-dropdown :global(.dropdown-menu) {
+  margin: 0;
+}
+
+/* One or more available input mechanisms can conveniently hover over elements. */
+@media (any-hover: hover) {
+  .nav-dropdown :global(.dropdown-menu) {
+    display: none;
+  }
+  .nav-dropdown:hover :global(.dropdown-menu) {
+    display: block;
+  }
+}
