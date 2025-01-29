@@ -5,9 +5,10 @@ import { Button, Container, Form, Nav, Navbar, NavbarCollapse, NavbarToggle, Nav
 // import { Link } from "react-router-dom";
 import './MyNav.css';
 // import { DARK_THEME } from '../../utils/theme';
-// import i18n from '../../app/utils/i18n';
 import MyNavDropdown, { MyNavDropdownProps } from './MyNavDropdown';
 import MyNavLink, { MyNavLinkProps } from './MyNavLink';
+import { useTranslations } from 'next-intl';
+import { useToggleTheme, DARK_THEME } from '../utils/theme';
 
 interface MyNavItem {
   type: 'link' | 'dropdown',
@@ -17,15 +18,47 @@ interface MyNavItem {
 interface MyNavProps {
   // theme: string,
   // toggleTheme: (e: React.ChangeEvent<HTMLInputElement>) => void;
-  items: MyNavItem[],
+  // items: MyNavItem[],
 }
 
 
 const MyNav = (props: MyNavProps) => {
   // const { theme, toggleTheme, items } = props;
   const {
-    items
   } = props;
+  // const c = useTranslations('common');
+  const t = useTranslations('nav');
+  const [theme, toggleTheme] = useToggleTheme();
+
+  const items: MyNavItem[] = [
+    { type: 'link', props: { to: "/", label: t('Home') } },
+    { type: 'link', props: { to: "/your-tutor", label: t('Your Tutor') } },
+    // { type: 'link', props: { to: "/your-developer", label: t('Your Developer') } },
+    // {
+    //   type: 'dropdown',
+    //   props: {
+    //     title: t("Learn"),
+    //     items: [
+    //       { label: t('Index'), to: '/learn' },
+    //       // { label: t('Computer Science'), to: '/learn/computer-science/' },
+    //       // { label: t('Math'), to: '/learn/math/' },
+    //       // { label: t('Statistics'), to: '/learn/statistics/' },
+    //     ],
+    //   }
+    // },
+    // {
+    //   type: 'dropdown', props: {
+    //     title: t("Showcase"),
+    //     items: [
+    //       { label: t('Flashcard'), to: '/showcase/flashcard' },
+    //       { label: t('Recipe Planner'), to: '/showcase/recipe_planner' },
+    //       // { label: 'TodoMatic', to: '/showcase/todo' },
+    //       // { label: 'Gomuku Game', to: '/showcase/gomuku' },
+    //       // { label: 'Snake Game', to: '/showcase/snake' },
+    //     ],
+    //   }
+    // },
+  ];
 
   // i18n Translation toggle
   // const changeLanguage = (lng: string) => {
@@ -59,11 +92,11 @@ const MyNav = (props: MyNavProps) => {
             })}
           </Nav>
         </NavbarCollapse>
-        {/* <NavItem>
-            <Form>
-              <Form.Check id='theme-switch-nav' className="theme-switch" type="switch" onChange={toggleTheme} checked={theme === DARK_THEME} />
-            </Form>
-          </NavItem> */}
+        <NavItem>
+          <Form>
+            <Form.Check id='theme-switch-nav' className="theme-switch" type="switch" onChange={toggleTheme} checked={theme === DARK_THEME} />
+          </Form>
+        </NavItem>
       </Container>
     </Navbar>
   );

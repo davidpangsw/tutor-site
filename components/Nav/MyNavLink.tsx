@@ -1,6 +1,6 @@
 import React from 'react'
 import { Nav, NavLink } from 'react-bootstrap';
-import Link from 'next/link';
+import {Link} from '@/i18n/routing';
 
 interface MyNavLinkProps {
   to: string,

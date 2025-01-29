@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavDropdown } from 'react-bootstrap';
-import Link from 'next/link';
 import styles from './MyNavDropdown.module.css';
+import { Link } from '@/i18n/routing';
 
 interface MyNavDropdownProps {
   title: string,
@@ -25,7 +25,7 @@ const MyNavDropdown = (props: MyNavDropdownProps) => {
         <NavDropdown.Item
           key={to}
           as={Link}
-          to={to}
+          href={to}
         >{label}</NavDropdown.Item>
       )
       )}

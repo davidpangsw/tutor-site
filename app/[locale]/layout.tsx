@@ -1,40 +1,40 @@
-import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
-import {notFound} from 'next/navigation';
+import { NextIntlClientProvider, useTranslations } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import { notFound } from 'next/navigation';
 import { routing } from '../../i18n/routing';
-import MyNav, { MyNavProps } from '../../components/Nav/MyNav';
- 
-export default async function LocaleLayout({
-  children,
-  params: {locale}
-}: {
+import MyNav from '../../components/Nav/MyNav';
+
+import '@/styles/App.css';
+import '@/styles/index.css';
+import '@/public/assets/cosmo/bootstrap.min.css';
+// import '@/public/assets/darkly.min.css';
+import '@/public/assets/google-fonts.css';
+
+export default async function LocaleLayout(context: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: Promise<{ locale: string }>;
 }) {
+  const children = context.children;
+  const { locale } = await context.params; // From nextjs 15 params are asynchronous
+
   // Ensure that the incoming `locale` is valid
   if (!routing.locales.includes(locale as any)) {
     notFound();
   }
- 
+
   // Providing all messages to the client side is the easiest way to get started
   const messages = await getMessages();
- 
-  // const { t } = useTranslation(['common']);
-  const t = (s: string) => {return s};
-  // const [theme, toggleTheme] = useToggleTheme();
-  const myNavProps: MyNavProps = {
-    // theme,
-    // toggleTheme,
-    items: [
-      { type: 'link', props: { to: "/", label: t('Home') } },
-    ]
-  }
+
   return (
     <html lang={locale}>
-      <body>
+      <body data-bs-theme=''>
         <NextIntlClientProvider messages={messages}>
-          <MyNav {...myNavProps} />
-          {children}
+          <div className={
+            `App vw-100 min-vh-100 d-flex flex-column roboto-light`
+          }>
+            <MyNav />
+            {children}
+          </div>
         </NextIntlClientProvider>
       </body>
     </html>

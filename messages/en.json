@@ -1,4 +1,13 @@
 {
+  "common": {
+  },
+  "nav": {
+    "Home": "Home",
+    "Index": "Index",
+    "Your Tutor": "Your Tutor",
+    "Your Developer": "Your Develeoper",
+    "Learn": "Learn"
+  },
   "HomePage": {
     "title": "Hello world!",
     "about": "Go to the about page"
