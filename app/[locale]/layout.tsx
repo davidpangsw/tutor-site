@@ -4,11 +4,9 @@ import { notFound } from 'next/navigation';
 import { routing } from '../../i18n/routing';
 import MyNav from '../../components/Nav/MyNav';
 
-import '@/styles/App.css';
 import '@/styles/index.css';
-import '@/public/assets/cosmo/bootstrap.min.css';
-// import '@/public/assets/darkly.min.css';
-import '@/public/assets/google-fonts.css';
+import '@/styles/cosmo/bootstrap.min.css';
+import '@/styles/google-fonts.css';
 
 export default async function LocaleLayout(context: {
   children: React.ReactNode;
@@ -29,9 +27,7 @@ export default async function LocaleLayout(context: {
     <html lang={locale}>
       <body data-bs-theme=''>
         <NextIntlClientProvider messages={messages}>
-          <div className={
-            `App vw-100 min-vh-100 d-flex flex-column roboto-light`
-          }>
+          <div className={ `App vw-100 min-vh-100 d-flex flex-column roboto-light` }>
             <MyNav />
             {children}
           </div>
