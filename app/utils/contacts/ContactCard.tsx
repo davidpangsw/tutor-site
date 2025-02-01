@@ -18,7 +18,7 @@ const TutorContactCard = (props: any) => {
     throw new Error("ContactContext is undefined. (Is it wrapped by Provider?");
   }
   const { contacts } = context;
-  const { phone, whatsapp, wechat, email, wechat_url } = contacts;
+  const { wechat, email, wechat_url } = contacts;
   const [copySuccess, setCopySuccess] = useState('');
   const copyToClipboard = async (label: string, text: string) => {
 
@@ -35,30 +35,30 @@ const TutorContactCard = (props: any) => {
 
 
   const data: { [key: string]: { label: string, value: string, url?: string, linkIcon: React.ReactNode | null } } = {
-    'phone': {
-      label: 'Phone',
-      value: phone,
-      // url: '#',
-      linkIcon: (<FaPhone />),
-    },
-    'whatsapp': {
-      label: 'WhatsApp',
-      value: whatsapp,
-      url: `https://wa.me/${whatsapp}`,
-      linkIcon: (<FaWhatsapp />),
-    },
+    // 'phone': {
+    //   label: 'Phone',
+    //   value: phone,
+    //   // url: '#',
+    //   linkIcon: (<FaPhone />),
+    // },
+    // 'whatsapp': {
+    //   label: 'WhatsApp',
+    //   value: whatsapp,
+    //   url: `https://wa.me/${whatsapp}`,
+    //   linkIcon: (<FaWhatsapp />),
+    // },
     'wechat': {
       label: 'WeChat',
       value: wechat,
       url: wechat_url,
-      linkIcon: (<FaWeixin />),
+      linkIcon: (<FaWeixin color="#7BB32E" />),
     },
-    // 'email': {
-    //   label: 'Email',
-    //   value: email,
-    //   url: `mailto:${email}`,
-    //   linkIcon: (<FaEnvelope />),
-    // },
+    'email': {
+      label: 'Email',
+      value: email,
+      url: `mailto:${email}`,
+      linkIcon: (<FaEnvelope />),
+    },
   }
 
   return (

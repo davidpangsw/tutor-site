@@ -2,7 +2,6 @@
   "title": "聯繫",
   "copySuccess": "{label} 已複製到剪貼板！",
   "apiNotAvailable": "錯誤：剪貼簿 API 不可用。",
-  "Phone": "電話",
   "WeChat": "微信",
-  "WhatsApp": "WhatsApp"
+  "Email": "電子郵件"
 }
