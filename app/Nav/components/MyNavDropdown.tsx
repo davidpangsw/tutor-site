@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavDropdown } from 'react-bootstrap';
 import styles from './MyNavDropdown.module.css';
-import { Link } from '@/i18n/routing';
+import {Link} from '@/app/utils/locale/i18n/routing';
 
 interface MyNavDropdownProps {
   title: string,

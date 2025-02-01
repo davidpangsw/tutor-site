@@ -1,12 +1,12 @@
 import { NextIntlClientProvider, useTranslations } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { routing } from '../../i18n/routing';
-import MyNav from '../../components/Nav/MyNav';
+import { routing } from '../utils/locale/i18n/routing';
+import MyNav from '../Nav/MyNav';
 
-import '@/styles/index.css';
-import '@/styles/cosmo/bootstrap.min.css';
-import '@/styles/google-fonts.css';
+import '@/public/assets/styles/index.css';
+import '@/public/assets/styles/cosmo/bootstrap.min.css';
+import '@/public/assets/styles/google-fonts.css';
 
 export default async function LocaleLayout(context: {
   children: React.ReactNode;
