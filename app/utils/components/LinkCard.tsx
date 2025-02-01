@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Card, Button } from 'react-bootstrap';
-import { Link } from './locale/i18n/routing';
+import { Link } from '@/app/utils/locale/i18n/routing';
 
 const LinkCard = (props: any) => {
   const [active, setActive] = useState(false);

@@ -1,0 +1,30 @@
+{
+  "Under Construction": "建設中",
+  "Phone": "電話",
+
+  "Home": "首頁",
+  "STEM Tutor": "STEM 補習老師",
+  "Full-stack Developer": "全棧開發者",
+
+  "Your Tutor": "您的補習老師",
+  "Grade": "年級",
+  "Schedule": "時間表",
+  "Location": "地點",
+  "Online": "在線",
+  "SessionLength": "課程時長",
+  "Subject": "科目",
+
+  "Your Developer": "您的開發者",
+
+  "Learn": "學習",
+  "Index": "索引",
+  "Computer Science": "計算機科學",
+  "Math": "數學",
+  "Statistics": "統計學",
+
+  "Showcase": "展示",
+  "Flashcard": "抽認卡",
+  "Recipe Planner": "配方規劃器",
+
+  "welcome": "歡迎"
+}

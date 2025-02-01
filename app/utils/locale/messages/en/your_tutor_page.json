@@ -1,0 +1,239 @@
+{
+  "tutorServiceCard": {
+    "title": "Subjects and Services",
+    "titlePoints": [
+      {
+        "title": "Grade 7 - 12",
+        "subtitle": "Multiple subjects supported in a single service",
+        "points": [
+          {
+            "bold": "Math",
+            "text": "Pre-Calculus, Calculus, AP/IB/SAT, and more"
+          },
+          {
+            "bold": "Computer"
+          },
+          {
+            "bold": "Statistics"
+          },
+          {
+            "bold": "Physics"
+          },
+          {
+            "bold": "Chemistry"
+          },
+          {
+            "bold": "Science",
+            "text": "Up to grade 9"
+          },
+          {
+            "bold": "Other Subjects and Grades",
+            "text": "Available upon request"
+          }
+        ]
+      },
+      {
+        "title": "University Level",
+        "subtitle": "Overcome difficulties in university courses",
+        "points": [
+          {
+            "bold": "Math",
+            "text": "Year 1 - 2"
+          },
+          {
+            "bold": "Computer Science",
+            "text": "Year 1"
+          }
+        ]
+      },
+      {
+        "title": "Special / Fun Subjects",
+        "subtitle": "Best for nurturing interest in math",
+        "points": [
+          {
+            "bold": "Math (Competition)",
+            "text": "Grade 4 - Grade 9"
+          },
+          {
+            "bold": "Rubik's Cube",
+            "text": "Suitable for Grade 6 or above"
+          },
+          {
+            "bold": "Minecraft Programming (Python)",
+            "text": "Suitable for Grade 6 or above"
+          },
+          {
+            "bold": "Other Subjects and Grades",
+            "text": "Available upon request"
+          }
+        ]
+      },
+      {
+        "title": "Support Multiple Languages",
+        "subtitle": "",
+        "points": [
+          {
+            "bold": "English"
+          },
+          {
+            "bold": "Cantonese"
+          },
+          {
+            "bold": "Mandarin"
+          }
+        ]
+      },
+      {
+        "title": "Additional Learning Materials",
+        "subtitle": "Tailored to Students' Needs",
+        "points": [
+          {
+            "bold": "Supplementary Notes"
+          },
+          {
+            "bold": "Supplementary Homework"
+          },
+          {
+            "bold": "Digital Flashcards"
+          },
+          {
+            "bold": "Interactive Websites"
+          },
+          {
+            "bold": "Videos"
+          }
+        ]
+      }
+    ]
+  },
+  "tutorPriceCard": {
+    "title": "Prices",
+    "extraCostDepends": "Extra cost depends on the following factors:",
+    "oneToOneServiceCard": {
+      "title": "One-on-One Service",
+      "body": "Price (per hour): ${{price}} + Extra cost; {{minHours}}-hour minimum"
+    },
+    "oneToTwoServiceCard": {
+      "title": "One-on-Two Service",
+      "body": "Price (per hour): ${{price}} + Extra cost; {{minHours}}-hour minimum"
+    },
+    "tutoringCenterEmploymentCard": {
+      "title": "Tutoring Center Employment",
+      "body": "Contact me with details, including work hours and wages"
+    }
+  },
+  "whyTutorCard": {
+    "title": "Why Choose a Private Tutor?",
+    "subtitle": "Unlock your child's full potential with personalized tutoring!",
+    "cards": [
+      {
+        "title": "Customized Learning",
+        "description": "Every student is unique and deserves a tailored learning experience.",
+        "points": [
+          {
+            "bold": "Tailored Lessons",
+            "text": "Customized to student’s learning style, pace, needs, and weaknesses."
+          },
+          {
+            "bold": "Clear Understanding",
+            "text": "Explain and clarify confusing topics."
+          },
+          {
+            "bold": "Continuous Assessment",
+            "text": "Keep students on track with regular feedback."
+          }
+        ]
+      },
+      {
+        "title": "Improved Academic Performance",
+        "description": "Boost your child's grades and confidence.",
+        "points": [
+          {
+            "bold": "Study Skills",
+            "text": "Train productive study skills and habits."
+          },
+          {
+            "bold": "Homework Assistance",
+            "text": "Reinforce classroom learning."
+          },
+          {
+            "bold": "Exam Preparation",
+            "text": "Improve performance on tests and exams."
+          },
+          {
+            "bold": "Supplementary materials",
+            "text": "Provided to suit needs."
+          }
+        ]
+      },
+      {
+        "title": "Confidence - Competence Loop",
+        "description": "Boost confidence through positive results, fostering a deeper interest in learning.",
+        "points": [
+          {
+            "bold": "Positive Reinforcement",
+            "text": "Builds confidence through encouragement and support."
+          },
+          {
+            "bold": "Increased Engagement",
+            "text": "Higher confidence leads to greater interest and better academic results."
+          },
+          {
+            "bold": "Reduced Stress",
+            "text": "Minimizes anxiety related to schoolwork and exams."
+          }
+        ]
+      },
+      {
+        "title": "Better Learning Environment",
+        "description": "Provide a safe environment for students to learn.",
+        "points": [
+          {
+            "bold": "Feeling of Safety",
+            "text": "Allows students to ask questions and make mistakes without fear."
+          },
+          {
+            "bold": "Undivided Attention from Tutor",
+            "text": "Benefit from 1-on-1 sessions."
+          },
+          {
+            "bold": "Goal Setting",
+            "text": "Set and achieve academic goals with a tutor."
+          }
+        ]
+      },
+      {
+        "title": "Flexible Scheduling",
+        "description": "Convenient sessions that fit your child's schedule.",
+        "points": [
+          {
+            "bold": "Flexible Time",
+            "text": "Create a schedule that works best for the student, or reschedule as needed."
+          },
+          {
+            "bold": "Flexible Location",
+            "text": "Options for home, nearby café, or remote sessions."
+          },
+          {
+            "bold": "Flexible Frequency",
+            "text": "Increase or decrease the number of sessions as needed."
+          }
+        ]
+      },
+      {
+        "title": "Long-Term Benefits",
+        "description": "Invest in your child's future.",
+        "points": [
+          {
+            "bold": "Foundation Building",
+            "text": "Strengthen foundational knowledge for future success."
+          },
+          {
+            "bold": "Lifelong Skills",
+            "text": "Develop critical thinking and problem-solving skills."
+          }
+        ]
+      }
+    ]
+  }
+}

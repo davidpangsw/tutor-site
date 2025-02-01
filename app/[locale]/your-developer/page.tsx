@@ -1,5 +1,5 @@
 import React from 'react'
-import UnderConstruction from '@/app/utils/UnderConstruction'
+import UnderConstruction from '@/app/utils/components/UnderConstruction'
 
 const YourDeveloperPage = () => {
   return (

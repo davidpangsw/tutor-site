@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 // import Image from 'react-bootstrap/Image';
 import Image from 'next/image';
-import LinkCard from '@/app/utils/LinkCard';
+import LinkCard from '@/app/utils/components/LinkCard';
 // import photo from '@/public/assets/photo.jpg';
 import { useTranslations } from 'next-intl';
 

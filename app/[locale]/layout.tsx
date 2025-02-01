@@ -7,6 +7,7 @@ import MyNav from '../Nav/MyNav';
 import '@/public/assets/styles/index.css';
 import '@/public/assets/styles/cosmo/bootstrap.min.css';
 import '@/public/assets/styles/google-fonts.css';
+import { ContactProvider } from '../utils/contacts/ContactContext';
 
 export default async function LocaleLayout(context: {
   children: React.ReactNode;
@@ -27,10 +28,12 @@ export default async function LocaleLayout(context: {
     <html lang={locale}>
       <body data-bs-theme=''>
         <NextIntlClientProvider messages={messages}>
-          <div className={ `App vw-100 min-vh-100 d-flex flex-column roboto-light` }>
-            <MyNav />
-            {children}
-          </div>
+          <ContactProvider>
+            <div className={`App vw-100 min-vh-100 d-flex flex-column roboto-light`}>
+              <MyNav />
+              {children}
+            </div>
+          </ContactProvider>
         </NextIntlClientProvider>
       </body>
     </html>

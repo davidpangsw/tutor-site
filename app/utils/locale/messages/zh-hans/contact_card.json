@@ -1,0 +1,8 @@
+{
+  "title": "联系",
+  "copySuccess": "{label} 已复制到剪贴板！",
+  "apiNotAvailable": "错误：剪贴板 API 不可用。",
+  "Phone": "电话",
+  "WeChat": "微信",
+  "WhatsApp": "WhatsApp"
+}
