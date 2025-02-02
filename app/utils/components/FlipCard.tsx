@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import { Card } from 'react-bootstrap';
 import styles from './FlipCard.module.css';

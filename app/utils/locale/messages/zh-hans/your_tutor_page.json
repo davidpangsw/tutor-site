@@ -68,11 +68,11 @@
     "extraCostDepends": "额外费用取决于以下因素：",
     "oneToOneServiceCard": {
       "title": "一对一服务",
-      "body": "价格（每小时）：${{price}} + 额外费用；最低{{minHours}}小时"
+      "body": "价格（每小时）：${price} + 额外费用；最低{minHours}小时"
     },
     "oneToTwoServiceCard": {
       "title": "一对二服务",
-      "body": "价格（每小时）：${{price}} + 额外费用；最低{{minHours}}小时"
+      "body": "价格（每小时）：${price} + 额外费用；最低{minHours}小时"
     },
     "tutoringCenterEmploymentCard": {
       "title": "补习中心就业",

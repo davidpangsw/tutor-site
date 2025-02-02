@@ -1,65 +1,65 @@
 import { useTranslations } from 'next-intl';
-import React from 'react'
-import { Card, Row, Col, Container } from 'react-bootstrap'
+import React from 'react';
+import { Card, Row, Col, Container, CardBody, CardHeader } from 'react-bootstrap';
 
 const OneToOneServiceCard = (props: any) => {
-  const t = useTranslations('your_tutor_page');
+  const t = useTranslations('your_tutor_page.tutorPriceCard.oneToOneServiceCard');
   const price = "35";
   const minHours = 1.5;
   return (
     <Card className='p-0'>
-      <Card.Header>
-        {t('tutorPriceCard.oneToOneServiceCard.title')}
-      </Card.Header>
-      <Card.Body>
+      <CardHeader>
+        {t('title')}
+      </CardHeader>
+      <CardBody>
         <h5>
-          {t('tutorPriceCard.oneToOneServiceCard.body', { price, minHours })}
+          {t('body', { price, minHours })}
         </h5>
-      </Card.Body>
+      </CardBody>
     </Card>
   );
 }
 
 const OneToTwoServiceCard = (props: any) => {
-  const t = useTranslations('your_tutor_page');
+  const t = useTranslations('your_tutor_page.tutorPriceCard.oneToTwoServiceCard');
   const price = "53";
   const minHours = 1.5;
   return (
     <Card className='p-0'>
-      <Card.Header>
-        {t('tutorPriceCard.oneToTwoServiceCard.title')}
-      </Card.Header>
-      <Card.Body>
+      <CardHeader>
+        {t('title')}
+      </CardHeader>
+      <CardBody>
         <h5>
-          {t('tutorPriceCard.oneToTwoServiceCard.body', { price, minHours })}
+          {t('body', { price, minHours })}
         </h5>
-      </Card.Body>
+      </CardBody>
     </Card>
   );
 }
 
 const TutoringCenterEmploymentCard = (props: any) => {
-  const t = useTranslations('your_tutor_page');
+  const t = useTranslations('your_tutor_page.tutorPriceCard.tutoringCenterEmploymentCard');
   return (
     <Card className='p-0'>
-      <Card.Header>
-        {t('tutorPriceCard.tutoringCenterEmploymentCard.title')}
-      </Card.Header>
-      <Card.Body>
+      <CardHeader>
+        {t('title')}
+      </CardHeader>
+      <CardBody>
         <h5>
-          {t('tutorPriceCard.tutoringCenterEmploymentCard.body')}
+          {t('body')}
         </h5>
-      </Card.Body>
+      </CardBody>
     </Card>
   );
 }
 
 const TutorPriceCard = () => {
   const c = useTranslations('common');
-  const t = useTranslations('your_tutor_page');
+  const t = useTranslations('your_tutor_page.tutorPriceCard');
   return (
     <div>
-      <h1>{t('tutorPriceCard.title')}</h1>
+      <h1>{t('title')}</h1>
       <Card className="p-3">
         <Container>
           <Row>
@@ -73,7 +73,7 @@ const TutorPriceCard = () => {
             <Col
               md={6}
             >
-              <p>{t('tutorPriceCard.extraCostDepends')}</p>
+              <p>{t('extraCostDepends')}</p>
               <ul className='list-group'>
                 <li className='list-group-item'>{c('Grade')}</li>
                 <li className='list-group-item'>{c('Schedule')}</li>

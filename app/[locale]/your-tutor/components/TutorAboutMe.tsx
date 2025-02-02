@@ -1,6 +1,5 @@
 import React from 'react'
-import photo from '../../assets/photo.jpg';
-import { Col, Card, Container, Row } from 'react-bootstrap';
+import { Col, Card, Container, Row, CardImg, CardSubtitle, CardTitle } from 'react-bootstrap';
 import { useTranslations } from 'next-intl';
 
 interface Qualification {
@@ -18,9 +17,8 @@ interface Introduction {
 };
 
 const TutorAboutMe = () => {
-  const t = useTranslations('tutor_about_me');
-  // const intro = t('introduction', { returnObjects: true }) as Introduction[];
-  // const qualis = t('qualifications', { returnObjects: true }) as Qualification[];
+  const photo = '/assets/photo.jpg';
+  const t = useTranslations('your_tutor_page.tutor_about_me');
   const intro = t.raw('introduction') as Introduction[];
   const qualis = t.raw('qualifications') as Qualification[];
   return (
@@ -29,7 +27,7 @@ const TutorAboutMe = () => {
       <Container>
         <Row>
           <Col className="p-0 d-flex justify-content-center" md={{ span: 12, order: 1 }} >
-            <Card.Img src={photo} style={{ width: "100%", height: "auto", maxWidth: "320px" }} />
+            <CardImg src={photo} style={{ width: "100%", height: "auto", maxWidth: "320px" }} />
           </Col>
           <Col className="p-0" md={{ span: 12, order: 1 }} >
             <Card>
@@ -37,12 +35,12 @@ const TutorAboutMe = () => {
                 const { title, from, to, institute, description, scores } = q;
                 return (
                   <div key={title}>
-                    <Card.Title>{title}</Card.Title>
+                    <CardTitle>{title}</CardTitle>
                     <div className="px-4">
-                    <Card.Subtitle>{institute}</Card.Subtitle>
-                    <h6>{scores}</h6>
-                    <h6>{from} - {to}</h6>
-                    <p style={{ whiteSpace: "pre-line" }}>{description}</p>
+                      <CardSubtitle>{institute}</CardSubtitle>
+                      <h6>{scores}</h6>
+                      <h6>{from} - {to}</h6>
+                      <p style={{ whiteSpace: "pre-line" }}>{description}</p>
                     </div>
                   </div>
                 )
