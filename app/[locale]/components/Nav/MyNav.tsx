@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Button, Container, Form, Nav, Navbar, NavbarCollapse, NavbarToggle, NavItem } from "react-bootstrap";
+import { Container, Nav, Navbar, NavbarCollapse, NavbarToggle, NavItem } from "react-bootstrap";
 // import { Link } from "react-router-dom";
 import './MyNav.css';
 import MyNavDropdown, { MyNavDropdownProps } from './components/MyNavDropdown';
@@ -16,16 +16,11 @@ interface MyNavItem {
   props: MyNavLinkProps | MyNavDropdownProps,
 }
 
-interface MyNavProps {
-  // theme: string,
-  // toggleTheme: (e: React.ChangeEvent<HTMLInputElement>) => void;
-}
+// interface MyNavProps {
+// }
 
 
-const MyNav = (props: MyNavProps) => {
-  // const { theme, toggleTheme, items } = props;
-  const {
-  } = props;
+const MyNav = () => {
   // const c = useTranslations('common');
   const t = useTranslations('nav');
   return (
@@ -35,7 +30,7 @@ const MyNav = (props: MyNavProps) => {
         {/* <Navbar.Brand className='nav-item nav-underline' as={Link} to="/"><FaHome /></Navbar.Brand> */}
         <NavbarCollapse id="navbar-nav">
           <Nav className="me-auto">
-            {navItems.map(item => {
+            {navItems.map((item, index) => {
               if (item.type === 'link') {
                 const props = item.props as MyNavLinkProps;
                 return <MyNavLink
@@ -58,7 +53,7 @@ const MyNav = (props: MyNavProps) => {
                   items={items}
                   />
               } else {
-                return <div />
+                return <div key={index} />
               }
             })}
           </Nav>
@@ -74,5 +69,5 @@ const MyNav = (props: MyNavProps) => {
   );
 }
 
-export type { MyNavProps, MyNavItem };
+export type { MyNavItem };
 export default MyNav;

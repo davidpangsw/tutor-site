@@ -2,12 +2,13 @@
 import React, { useContext, useState } from 'react';
 import { Card, Col, Row, Table } from 'react-bootstrap';
 import { ContactContext } from './ContactContext';
-import { FaWhatsapp, FaWeixin, FaEnvelope, FaCopy, FaPhone } from 'react-icons/fa';
+import { FaWeixin, FaEnvelope, FaCopy } from 'react-icons/fa';
 import { useTranslations } from 'next-intl';
-import { IContact } from './config';
 import Link from 'next/link';
-
-const ContactCard = (props: any) => {
+interface ContactCardProps {
+  style?: React.CSSProperties,
+}
+const ContactCard = (props: ContactCardProps) => {
   // const { t: c } = useTranslation('common');
   const t = useTranslations('contact_card');
 

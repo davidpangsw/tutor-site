@@ -1,5 +1,5 @@
 import React from 'react'
-import { Nav, NavLink } from 'react-bootstrap';
+import { NavLink } from 'react-bootstrap';
 import {Link} from '@/app/utils/locale/i18n/routing';
 
 interface MyNavLinkProps {

@@ -4,9 +4,9 @@ import {createNavigation} from 'next-intl/navigation';
 export const routing = defineRouting({
   locales: ['en', 'zh-hant', 'zh-hans'],
   defaultLocale: 'en',
-  pathnames: {
-    '/home': '/',
-  }
+  // pathnames: {
+  //   '/home': '/',
+  // }
 });
  
 export const {

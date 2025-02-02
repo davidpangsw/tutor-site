@@ -12,7 +12,7 @@ interface MyNavDropdownProps {
 }
 
 const MyNavDropdown = (props: MyNavDropdownProps) => {
-  let { title, items } = props;
+  const { title, items } = props;
 
   return (
     <NavDropdown

@@ -1,10 +1,17 @@
 "use client";
 
 import React, { useState } from 'react';
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import { Link } from '@/app/utils/locale/i18n/routing';
 
-const LinkCard = (props: any) => {
+interface LinkCardProps {
+  to: string,
+  description: string,
+  title: string,
+  className: string,
+}
+
+const LinkCard = (props: LinkCardProps) => {
   const [active, setActive] = useState(false);
   const { to, description, title, className } = props;
   return (

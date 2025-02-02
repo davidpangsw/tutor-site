@@ -47,7 +47,7 @@ const HomePageCards = () => {
   );
 }
 
-const HomePage = (props: any) => {
+const HomePage = () => {
   const t = useTranslations('common');
 
   return (

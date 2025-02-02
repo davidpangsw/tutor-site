@@ -1,4 +1,4 @@
-import { NextIntlClientProvider, useTranslations } from 'next-intl';
+import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '../utils/locale/i18n/routing';
@@ -17,7 +17,7 @@ export default async function LocaleLayout(context: {
   const { locale } = await context.params; // From nextjs 15 params are asynchronous
 
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as any)) {
+  if (!(locale as keyof (typeof routing.locales))) {
     notFound();
   }
 

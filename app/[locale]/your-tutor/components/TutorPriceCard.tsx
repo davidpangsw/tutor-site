@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl';
 import React from 'react';
 import { Card, Row, Col, Container, CardBody, CardHeader } from 'react-bootstrap';
 
-const OneToOneServiceCard = (props: any) => {
+const OneToOneServiceCard = () => {
   const t = useTranslations('your_tutor_page.tutorPriceCard.oneToOneServiceCard');
   const price = "35";
   const minHours = 1.5;
@@ -20,7 +20,7 @@ const OneToOneServiceCard = (props: any) => {
   );
 }
 
-const OneToTwoServiceCard = (props: any) => {
+const OneToTwoServiceCard = () => {
   const t = useTranslations('your_tutor_page.tutorPriceCard.oneToTwoServiceCard');
   const price = "53";
   const minHours = 1.5;
@@ -38,7 +38,7 @@ const OneToTwoServiceCard = (props: any) => {
   );
 }
 
-const TutoringCenterEmploymentCard = (props: any) => {
+const TutoringCenterEmploymentCard = () => {
   const t = useTranslations('your_tutor_page.tutorPriceCard.tutoringCenterEmploymentCard');
   return (
     <Card className='p-0'>

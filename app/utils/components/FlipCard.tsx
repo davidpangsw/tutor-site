@@ -3,7 +3,14 @@ import React, { useState } from 'react';
 import { Card } from 'react-bootstrap';
 import styles from './FlipCard.module.css';
 
-const FlipCard = (props: any) => {
+interface FlipCardProps {
+  style: React.CSSProperties,
+  className: string,
+  front: React.ReactNode,
+  back: React.ReactNode,
+}
+
+const FlipCard = (props: FlipCardProps) => {
   const {style, className, front, back} = props;
   const [ active, setActive ] = useState(false);
 

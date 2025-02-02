@@ -1,6 +1,6 @@
 import { DARK_THEME, useToggleTheme } from '@/app/utils/theme';
 import React from 'react'
-import { Form, NavItem } from 'react-bootstrap'
+import { Form } from 'react-bootstrap'
 
 const MyNavThemeToggle = () => {
   const [theme, toggleTheme] = useToggleTheme();

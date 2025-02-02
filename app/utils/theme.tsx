@@ -1,7 +1,8 @@
 import { useEffect, useState } from 'react';
 const LIGHT_THEME = "light";
 const DARK_THEME = "dark";
-function useToggleTheme(defaultTheme: string = LIGHT_THEME) {
+const defaultTheme = LIGHT_THEME;
+function useToggleTheme() {
   const [theme, setTheme] = useState<string>(defaultTheme);
 
   useEffect(() => {
