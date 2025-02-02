@@ -18,6 +18,7 @@ export default async function LocaleLayout(context: {
 
   // Ensure that the incoming `locale` is valid
   if (!(locale as keyof (typeof routing.locales))) {
+    console.log("not found")
     notFound();
   }
 

@@ -64,7 +64,6 @@ const HomePage = () => {
               width="320"
               height="320"
               style={{ borderRadius: "50%", maxWidth: "320px" }}
-              layout="responsive"
               alt={'photo'}
             />
           </Col>
