@@ -7,7 +7,7 @@ import { useTranslations } from 'next-intl';
 import { IContact } from './config';
 import Link from 'next/link';
 
-const TutorContactCard = (props: any) => {
+const ContactCard = (props: any) => {
   // const { t: c } = useTranslation('common');
   const t = useTranslations('contact_card');
 
@@ -107,4 +107,4 @@ const TutorContactCard = (props: any) => {
   );
 }
 
-export default TutorContactCard;
+export default ContactCard;

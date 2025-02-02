@@ -2,7 +2,7 @@ import { NextIntlClientProvider, useTranslations } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '../utils/locale/i18n/routing';
-import MyNav from '../Nav/MyNav';
+import MyNav from './components/Nav/MyNav';
 
 import '@/public/assets/styles/index.css';
 import '@/public/assets/styles/cosmo/bootstrap.min.css';
