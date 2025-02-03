@@ -1,0 +1,17 @@
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import { Outlet } from 'react-router-dom';
+
+const LearnPage = (props: {}) => {
+  return (
+    <div className='w-100 h-100'>
+      <Helmet>
+        <title>Learn</title>
+        <meta name="description" content="This is the learn page" />
+      </Helmet>
+      <Outlet />
+    </div>
+  )
+}
+
+export default LearnPage;

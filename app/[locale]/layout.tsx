@@ -9,10 +9,12 @@ import '@/public/assets/styles/cosmo/bootstrap.min.css';
 import '@/public/assets/styles/google-fonts.css';
 import { ContactProvider } from '../utils/contacts/ContactContext';
 
-export default async function LocaleLayout(context: {
-  children: React.ReactNode;
-  params: Promise<{ locale: string }>;
-}) {
+export default async function LocaleLayout(
+  context: {
+    children: React.ReactNode;
+    params: Promise<{ locale: string }>;
+  }
+) {
   const children = context.children;
   const { locale } = await context.params; // From nextjs 15 params are asynchronous
 
