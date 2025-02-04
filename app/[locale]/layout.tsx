@@ -4,8 +4,8 @@ import { notFound } from 'next/navigation';
 import { routing } from '../utils/locale/i18n/routing';
 import MyNav from './components/Nav/MyNav';
 
-import '@/public/assets/styles/index.css';
 import '@/public/assets/styles/cosmo/bootstrap.min.css';
+import '@/public/assets/styles/index.css';
 import '@/public/assets/styles/google-fonts.css';
 import { ContactProvider } from '../utils/contacts/ContactContext';
 

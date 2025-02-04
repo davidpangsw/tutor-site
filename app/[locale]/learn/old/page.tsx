@@ -10,7 +10,7 @@ const LearnHome = () => {
   return (
       <div>
         <h1>{c('Learn')}</h1>
-        <p style={{ whiteSpace: "pre-line" }}>{t('introduction')}</p>
+        {/* <p style={{ whiteSpace: "pre-line" }}>{t('introduction')}</p> */}
         <ul>
           {SUBJECTS.map((item: { label: string; path: string; }) => {
             const { label, path } = item;

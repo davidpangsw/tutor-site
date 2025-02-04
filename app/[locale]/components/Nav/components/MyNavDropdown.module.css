@@ -1,8 +1,9 @@
 .nav-dropdown :global(.dropdown-toggle::after) {
-  display: none; /* Remove arrow */
+  /* Remove arrow */
+  /* display: none; */
 }
 .nav-dropdown :global(.dropdown-menu) {
-  margin: 0;
+  margin: 0 !important; /* Override Bootstrap */
 }
 
 /* One or more available input mechanisms can conveniently hover over elements. */
