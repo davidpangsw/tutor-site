@@ -17,12 +17,15 @@ export default getRequestConfig(async ({ requestLocale }) => {
     'contact_card': (await import(`../messages/${locale}/contact_card.json`)).default,
     'home_page': (await import(`../messages/${locale}/home_page.json`)).default,
     'your_tutor_page': {
-      ...(await import(`../messages/${locale}/your_tutor_page.json`)).default,
+      ...(await import(`../messages/${locale}/your_tutor_page/page.json`)).default,
       'tutor_about_me': (await import(`../messages/${locale}/your_tutor_page/tutor_about_me.json`)).default,
       'tutor_my_story': (await import(`../messages/${locale}/your_tutor_page/tutor_my_story.json`)).default,
     },
     'learn': {
       ...(await import(`../messages/${locale}/learn.json`)).default,
+      'sat_math': {
+        ...(await import(`../messages/${locale}/learn/sat_math/page.json`)).default,
+      },
       'playground': (await import(`../messages/${locale}/learn/playground.json`)).default,
     }
   };

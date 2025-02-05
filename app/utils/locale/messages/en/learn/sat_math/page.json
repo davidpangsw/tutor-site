@@ -1,0 +1,15 @@
+{
+    "title": "SAT Math",
+    "overview": {
+        "title": "Overview",
+        "description": "The SAT Math section assesses high school-level mathematical skills needed for college success. The test covers four areas: Algebra (13-15 questions), Advanced Math (13-15 questions), Problem Solving and Data Analysis (5-7 questions), and Geometry and Trigonometry (5-7 questions). Like the Reading and Writing section, Math is divided into two modules. Questions include multiple-choice and student-produced responses, assessing fluency, understanding, and application of essential math concepts. Questions from all categories appear in each module and are arranged from easiest to hardest.",
+        "reference": {
+            "url": "https://satsuite.collegeboard.org/sat/whats-on-the-test/math/overview"
+        },
+        "date": "2025/Feb/04"
+    },
+    "practice": {
+        "title": "Practice",
+        "description": "Interactive practices to help you build the foundations."
+    }
+}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { CardBody, CardSubtitle, CardTitle } from 'react-bootstrap';
-import FlipCard from './FlipCard';
+import FlipCard from './FlipCard/FlipCard';
 
 interface SummaryCardPoint {
   bold: string,

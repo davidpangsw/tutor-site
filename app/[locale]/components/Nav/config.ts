@@ -28,6 +28,7 @@ export const navItems: MyNavItem[] = [
     props: {
       title: "Learn",
       items: [
+        { label: 'SAT Math', to: '/learn/sat-math' },
         { label: 'Playground', to: '/learn/playground' },
         // { label: 'Index', to: '/learn' },
         // { label: 'Computer Science'), to: '/learn/computer-science/' },
