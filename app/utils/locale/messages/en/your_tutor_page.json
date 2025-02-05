@@ -110,11 +110,11 @@
     "title": "Prices",
     "extraCostDepends": "Extra cost depends on the following factors:",
     "oneToOneServiceCard": {
-      "title": "One-on-One Service",
+      "title": "One-to-One Service",
       "body": "Price (per hour): ${price} + Extra cost; {minHours}-hour minimum"
     },
     "oneToTwoServiceCard": {
-      "title": "One-on-Two Service",
+      "title": "One-to-Two Service",
       "body": "Price (per hour): ${price} + Extra cost; {minHours}-hour minimum"
     },
     "tutoringCenterEmploymentCard": {

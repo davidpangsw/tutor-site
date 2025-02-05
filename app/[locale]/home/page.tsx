@@ -21,11 +21,11 @@ const HomePageCards = () => {
       title: t('tutorCard.title'),
       description: t('tutorCard.description'),
     },
-    {
-      to: '/your-developer',
-      title: t('developerCard.title'),
-      description: t('developerCard.description'),
-    }
+    // {
+    //   to: '/your-developer',
+    //   title: t('developerCard.title'),
+    //   description: t('developerCard.description'),
+    // }
   ];
 
   return (

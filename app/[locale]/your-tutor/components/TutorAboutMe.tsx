@@ -11,15 +11,9 @@ interface Qualification {
   "description": string
 }
 
-interface Introduction {
-  title: string,
-  content: string,
-};
-
 const TutorAboutMe = () => {
   const photo = '/assets/photo.jpg';
   const t = useTranslations('your_tutor_page.tutor_about_me');
-  const intro = t.raw('introduction') as Introduction[];
   const qualis = t.raw('qualifications') as Qualification[];
   return (
     <div>
@@ -46,16 +40,6 @@ const TutorAboutMe = () => {
                 )
               })}
             </Card>
-          </Col>
-          <Col className="p-0" md={{ span: 12, order: 1 }} >
-            {intro.map(({ title, content }) => {
-              return (
-                <div key={title}>
-                  <h3>{title}</h3>
-                  <p style={{ whiteSpace: "pre-line" }}>{content}</p>
-                </div>
-              )
-            })}
           </Col>
         </Row>
       </Container>

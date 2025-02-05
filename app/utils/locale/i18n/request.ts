@@ -19,6 +19,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     'your_tutor_page': {
       ...(await import(`../messages/${locale}/your_tutor_page.json`)).default,
       'tutor_about_me': (await import(`../messages/${locale}/your_tutor_page/tutor_about_me.json`)).default,
+      'tutor_my_story': (await import(`../messages/${locale}/your_tutor_page/tutor_my_story.json`)).default,
     },
     'learn': {
       ...(await import(`../messages/${locale}/learn.json`)).default,

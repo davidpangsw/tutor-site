@@ -22,7 +22,7 @@ export const localeToggleItems: MyNavLocaleToggleItem[] = [
 export const navItems: MyNavItem[] = [
   { type: 'link', props: { to: "/home", label: 'Home' } },
   { type: 'link', props: { to: "/your-tutor", label: 'Your Tutor' } },
-  { type: 'link', props: { to: "/your-developer", label: 'Your Developer' } },
+  // { type: 'link', props: { to: "/your-developer", label: 'Your Developer' } },
   {
     type: 'dropdown',
     props: {
