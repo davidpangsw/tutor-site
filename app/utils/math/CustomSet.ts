@@ -1,4 +1,3 @@
-import { Dispatch, SetStateAction } from "react";
 // import { useLocalStorage } from "usehooks-ts";
 
 // function useLocalStorageSet<T>(
@@ -37,7 +36,7 @@ class CustomSet<T> implements Iterable<T> {
     toArray(): T[] { return Array.from(this.items.keys()); }
     toString(): string { return `{ ${Array.from(this.items.keys()).join(', ')} }`; }
     [Symbol.iterator](): Iterator<T> { return this.items.keys(); }
-    forEach(callbackfn: (value: T, value2: T, set: CustomSet<T>) => void, thisArg?: any): void {
+    forEach(callbackfn: (value: T, value2: T, set: CustomSet<T>) => void, thisArg?: CustomSet<T>): void {
         this.items.forEach((_, value) => { callbackfn.call(thisArg, value, value, this); });
     }
     static serialize<T>(value: CustomSet<T>): string { return JSON.stringify(Array.from(value.items.keys()))};
@@ -91,54 +90,54 @@ class CustomSet<T> implements Iterable<T> {
     }
 }
 
-// Testing CustomSet class
-function runTests() {
-    // Test Initialization and Add
-    const set1 = new CustomSet<number>([1, 2, 3]);
-    console.assert(set1.size === 3, 'Test 1 Failed');
-    console.assert(set1.has(1) === true, 'Test 2 Failed');
-    console.assert(set1.has(4) === false, 'Test 3 Failed');
+// // Testing CustomSet class
+// function runTests() {
+//     // Test Initialization and Add
+//     const set1 = new CustomSet<number>([1, 2, 3]);
+//     console.assert(set1.size === 3, 'Test 1 Failed');
+//     console.assert(set1.has(1) === true, 'Test 2 Failed');
+//     console.assert(set1.has(4) === false, 'Test 3 Failed');
 
-    // Test Add and Delete
-    set1.add(4);
-    console.assert(set1.size === 4, 'Test 4 Failed');
-    console.assert(set1.has(4) === true, 'Test 5 Failed');
-    set1.delete(4);
-    console.assert(set1.size === 3, 'Test 6 Failed');
-    console.assert(set1.has(4) === false, 'Test 7 Failed');
+//     // Test Add and Delete
+//     set1.add(4);
+//     console.assert(set1.size === 4, 'Test 4 Failed');
+//     console.assert(set1.has(4) === true, 'Test 5 Failed');
+//     set1.delete(4);
+//     console.assert(set1.size === 3, 'Test 6 Failed');
+//     console.assert(set1.has(4) === false, 'Test 7 Failed');
 
-    // Test Difference
-    const set2 = new CustomSet<number>([3, 4, 5, 6]);
-    const diff = set1.difference(set2);
-    console.assert(diff.size === 1, 'Test 8 Failed');
-    console.assert(diff.has(1) === true, 'Test 9 Failed');
-    console.assert(diff.has(2) === true, 'Test 10 Failed');
-    console.assert(diff.has(3) === false, 'Test 11 Failed');
+//     // Test Difference
+//     const set2 = new CustomSet<number>([3, 4, 5, 6]);
+//     const diff = set1.difference(set2);
+//     console.assert(diff.size === 1, 'Test 8 Failed');
+//     console.assert(diff.has(1) === true, 'Test 9 Failed');
+//     console.assert(diff.has(2) === true, 'Test 10 Failed');
+//     console.assert(diff.has(3) === false, 'Test 11 Failed');
 
-    // Test isSubsetOf
-    const subset = new CustomSet<number>([1, 2]);
-    const superset = new CustomSet<number>([1, 2, 3, 4]);
-    const disjointSet = new CustomSet<number>([5, 6]);
+//     // Test isSubsetOf
+//     const subset = new CustomSet<number>([1, 2]);
+//     const superset = new CustomSet<number>([1, 2, 3, 4]);
+//     const disjointSet = new CustomSet<number>([5, 6]);
 
-    console.assert(subset.isSubsetOf(superset) === true, 'Test 12 Failed');
-    console.assert(subset.isSubsetOf(disjointSet) === false, 'Test 13 Failed');
-    console.assert(superset.isSubsetOf(superset) === true, 'Test 14 Failed');
+//     console.assert(subset.isSubsetOf(superset) === true, 'Test 12 Failed');
+//     console.assert(subset.isSubsetOf(disjointSet) === false, 'Test 13 Failed');
+//     console.assert(superset.isSubsetOf(superset) === true, 'Test 14 Failed');
 
-    // Test toArray and toString
-    console.assert(JSON.stringify(set1.toArray()) === JSON.stringify([1, 2, 3]), 'Test 15 Failed');
-    console.assert(set1.toString() === '{ 1, 2, 3 }', 'Test 16 Failed');
+//     // Test toArray and toString
+//     console.assert(JSON.stringify(set1.toArray()) === JSON.stringify([1, 2, 3]), 'Test 15 Failed');
+//     console.assert(set1.toString() === '{ 1, 2, 3 }', 'Test 16 Failed');
 
-    // Test forEach
-    let sum = 0;
-    set1.forEach((value) => sum += value);
-    console.assert(sum === 6, 'Test 17 Failed');
+//     // Test forEach
+//     let sum = 0;
+//     set1.forEach((value) => sum += value);
+//     console.assert(sum === 6, 'Test 17 Failed');
 
-    // Test iterable
-    const arrayFromSet = [...set1];
-    console.assert(JSON.stringify(arrayFromSet) === JSON.stringify([1, 2, 3]), 'Test 18 Failed');
+//     // Test iterable
+//     const arrayFromSet = [...set1];
+//     console.assert(JSON.stringify(arrayFromSet) === JSON.stringify([1, 2, 3]), 'Test 18 Failed');
 
-    console.log('All tests passed!');
-}
+//     console.log('All tests passed!');
+// }
 
 export {
     CustomSet,

@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 // import 'katex/dist/katex.min.css';
 import { Button, Table } from 'react-bootstrap';
 import { inline, block } from '@/app/utils/math/mathjax';
-import { MathJax, MathJaxContext } from 'better-react-mathjax';
+import { MathJaxContext } from 'better-react-mathjax';
 // import { inline, block } from '../../../utils/math/latex';
 
 // symbols
@@ -51,7 +51,7 @@ const BayesianGrid = () => {
           value={m0}
           min={1}
           max={M - 1}
-          onChange={(e: { target: { value: any; }; }) => setParams({ m0: Number(e.target.value), n0, n1 })}
+          onChange={e => setParams({ m0: Number(e.target.value), n0, n1 })}
         />
         <label className='mx-2' htmlFor="slider-m0">Prior probability</label>
         <span> (Prevalence of disease) </span>
@@ -62,7 +62,7 @@ const BayesianGrid = () => {
           value={n0}
           min={1}
           max={N - 1}
-          onChange={(e: { target: { value: any; }; }) => setParams({ m0, n0: Number(e.target.value), n1 })}
+          onChange={e => setParams({ m0, n0: Number(e.target.value), n1 })}
         />
         <label className='mx-2' htmlFor="slider-n0">Likelihood</label>
         <span> (Sensitivity in disease testing) </span>
@@ -73,7 +73,7 @@ const BayesianGrid = () => {
           value={n1}
           min={1}
           max={9}
-          onChange={(e: { target: { value: any; }; }) => setParams({ m0, n0, n1: Number(e.target.value) })}
+          onChange={e => setParams({ m0, n0, n1: Number(e.target.value) })}
         />
         <label className='mx-2' htmlFor="slider-n1">False positive rate</label>
       </li>
@@ -83,7 +83,7 @@ const BayesianGrid = () => {
     <div>
       <h4>Question: </h4>
       <ol>
-        <li>What is Bayes' formula?</li>
+        <li>What is Bayes&apos; formula?</li>
         <li>
           In the grid below, each dot represents a client. Shaded dots indicate clients who tested positive. {H} (or red dots) indicates infected clients.
         </li>
@@ -98,7 +98,7 @@ const BayesianGrid = () => {
           </ul>
         </li>
         <li>
-          Verify your result with the Bayes' formula.
+          Verify your result with the Bayes&apos; formula.
         </li>
       </ol>
     </div>
@@ -181,17 +181,17 @@ const Bayesian = () => {
   return (
     <MathJaxContext>
       <div>
-        <h1>Bayes' Theorem and Bayesian Inference</h1>
+        <h1>Bayes&apos; Theorem and Bayesian Inference</h1>
         <div>
           <BayesianGrid />
         </div>
 
         <div>
           <h2>Explanations</h2>
-          <p>The best way to memorize Bayes' Theorem is by rearranging terms from the definition of conditional probability.</p>
+          <p>The best way to memorize Bayes&apos; Theorem is by rearranging terms from the definition of conditional probability.</p>
           <p>Always remember</p>
           {block(`P(A|B) = \\frac{P(A \\cap B)}{P(B)}`)}
-          <p>This definition allows us to "split" the {CAP} to either condition {A} or {B}</p>
+          <p>This definition allows us to &quot;split&quot; the {CAP} to either condition {A} or {B}</p>
           {block(`P(A \\cap B) = P(A|B)P(B)`)}
           {block(`P(A \\cap B) = P(B|A)P(A)`)}
           <p>Using the above properties on {H} and {E}:</p>
@@ -206,7 +206,7 @@ const Bayesian = () => {
           <p>This theorem allows us to:</p>
           <ul>
             <li>flip {inline(`P(H|E)`)} to {inline(`P(E|H)`)}, which is usually easier to find.</li>
-            <li>"update" the probability of a hypothesis from new evidence, if you think of {H} as the Hypothesis we want to prove, and {E} as the Evidence we obtained.</li>
+            <li>&quot;update&quot; the probability of a hypothesis from new evidence, if you think of {H} as the Hypothesis we want to prove, and {E} as the Evidence we obtained.</li>
           </ul>
         </div>
 
@@ -217,7 +217,7 @@ const Bayesian = () => {
             <li>{H}ypothesis: The patient has a disease.</li>
             <li>{E}vidence: The patient is tested positive.</li>
           </ul>
-          <p>Let's assume:</p>
+          <p>Let&apos;s assume:</p>
           <ul>
             <li>{inline(`P(H) = 1\\%`)} (1% prevalence). The probability of hypothesis prior to evidence, or **prior probability**, or just **prior**.</li>
             <li>{inline(`P(E|H) = 98\\%`)} (98% sensitivity). The probability of evidence given that the hypothesis is true, which is called the **likelihood**</li>
@@ -239,7 +239,7 @@ const Bayesian = () => {
           <p>So, given a positive test result, the probability of having the disease is approximately 16.53%.</p>
           <p>This is very counter-intuitive. You are tested positive, but the chance of having the disease is only 16.53%! Why is that?</p>
           <p>The reason is that the prior probability {inline('P(H) = 1\\%')} of the hypothesis, or the **base rate**, is actually very low here. Our evidence increased it to {inline('16.53')} times, but it is still low.</p>
-          <p>Failing to consider the base rate is called the **base rate fallacy**. This is a very common cognitive bias because, while the probabilities are hard to calculate, "how representative is this event of the hypothesis" is much easier to answer, and we humans are likely to switch to an easier question unconsciously. It is related to a concept called the **representativeness heuristic**.</p>
+          <p>Failing to consider the base rate is called the **base rate fallacy**. This is a very common cognitive bias because, while the probabilities are hard to calculate, &quot;how representative is this event of the hypothesis&quot; is much easier to answer, and we humans are likely to switch to an easier question unconsciously. It is related to a concept called the **representativeness heuristic**.</p>
         </div>
       </div>
     </MathJaxContext>

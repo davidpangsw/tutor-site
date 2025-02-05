@@ -53,7 +53,7 @@ const practice = (data: FlashcardData, grade: SuperMemoGrade) => {
 }
 
 const forwardDays = (cards: FlashcardData[], updateDeck: (newDeck: FlashcardDeckData) => void, days: number) => {
-  return cards.map((card, index) => {
+  return cards.map((card) => {
     return { ...card, dueDate: dayjs(card.dueDate).subtract(days, 'day').toISOString(), }
   });
 }

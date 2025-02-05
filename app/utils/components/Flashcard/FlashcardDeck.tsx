@@ -20,7 +20,7 @@ interface FlashcardDeckProps {
 const FlashcardDeck = (props: FlashcardDeckProps) => {
   const { portfolio, setPortfolio, deck } = props;
   const { settings } = portfolio;
-  const { id, label, isNew, cards } = deck;
+  const { label, isNew, cards } = deck;
 
   const [closestCard, setClosestCard] = useState<number | null>(null);
   const updateDeck = (newDeck: FlashcardDeckData) => {
