@@ -2,7 +2,7 @@
 import React, { useContext, useState } from 'react';
 import { Card, Col, Row, Table } from 'react-bootstrap';
 import { ContactContext } from './ContactContext';
-import { FaWeixin, FaEnvelope, FaCopy } from 'react-icons/fa';
+import { FaWeixin, FaEnvelope, FaCopy, FaPhone, FaWhatsapp } from 'react-icons/fa';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 interface ContactCardProps {
@@ -19,7 +19,7 @@ const ContactCard = (props: ContactCardProps) => {
     throw new Error("ContactContext is undefined. (Is it wrapped by Provider?");
   }
   const { contacts } = context;
-  const { wechat, email, wechat_url } = contacts;
+  const { text, wechat, email, wechat_url } = contacts;
   const [copySuccess, setCopySuccess] = useState('');
   const copyToClipboard = async (label: string, text: string) => {
 
@@ -36,22 +36,22 @@ const ContactCard = (props: ContactCardProps) => {
 
 
   const data: { [key: string]: { label: string, value: string, url?: string, linkIcon: React.ReactNode | null } } = {
-    // 'phone': {
-    //   label: 'Phone',
-    //   value: phone,
-    //   // url: '#',
-    //   linkIcon: (<FaPhone />),
-    // },
-    // 'whatsapp': {
-    //   label: 'WhatsApp',
-    //   value: whatsapp,
-    //   url: `https://wa.me/${whatsapp}`,
-    //   linkIcon: (<FaWhatsapp />),
-    // },
+    'text': {
+      label: 'phone (text-only)',
+      value: text,
+      // url: '#',
+      linkIcon: (<FaPhone />),
+    },
+    'whatsapp': {
+      label: 'WhatsApp',
+      value: text,
+      // url: `https://wa.me/${whatsapp}`,
+      linkIcon: (<FaWhatsapp />),
+    },
     'wechat': {
       label: 'WeChat',
       value: wechat,
-      url: wechat_url,
+      // url: wechat_url,
       linkIcon: (<FaWeixin color="#7BB32E" />),
     },
     'email': {

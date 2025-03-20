@@ -18,6 +18,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
     'home_page': (await import(`../messages/${locale}/home_page.json`)).default,
     'your_tutor_page': {
       ...(await import(`../messages/${locale}/your_tutor_page/page.json`)).default,
+      'tutor_why_me': (await import(`../messages/${locale}/your_tutor_page/tutor_why_me.json`)).default,
+      'tutor_service_card': (await import(`../messages/${locale}/your_tutor_page/tutor_service_card.json`)).default,
       'tutor_about_me': (await import(`../messages/${locale}/your_tutor_page/tutor_about_me.json`)).default,
       'tutor_my_story': (await import(`../messages/${locale}/your_tutor_page/tutor_my_story.json`)).default,
     },

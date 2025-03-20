@@ -1,36 +1,56 @@
 {
   "title": "關於我",
-    "qualifications": [
+  "experiences": [
+    {
+      "title": "全職STEM輔導教師",
+      "from": "2023/09",
+      "to": "至今",
+      "description": "在大溫哥華地區的多間輔導中心教學。"
+    },
+    {
+      "title": "兼職STEM輔導教師",
+      "from": "2012/09",
+      "to": "2023/09",
+      "description": "自從我在香港就讀大學時起，提供兼職STEM輔導。"
+    },
+    {
+      "title": "軟件開發員",
+      "from": "2015/09",
+      "to": "2021/09",
+      "description": "在軟件開發領域以專業身份作出貢獻。"
+    }
+  ],
+  "qualifications": [
     {
       "title": "電腦研究文憑",
       "from": "2021/09",
       "to": "2023/08",
-      "institute": "加拿大蘭加拉學院",
-      "scores": "GPA (主修): 4.33/4.33",
-      "description": "所有計算機課程均獲 A+"
+      "institute": "蘭加拉學院，加拿大",
+      "scores": "主修GPA：4.33/4.33",
+      "description": "所有電腦課程全獲A+"
     },
     {
-      "title": "理學士 (數學)",
+      "title": "理學學士，數學",
       "from": "2012/09",
       "to": "2015/08",
-      "institute": "香港中文大學",
-      "scores": "GPA (主修): 3.318/4.000",
-      "description": "亞洲著名數學系"
+      "institute": "香港中文大學，香港",
+      "scores": "主修GPA：3.318/4.000",
+      "description": "亞洲知名的數學系"
     },
     {
-      "title": "香港高級程度會考 (中六至中七)",
+      "title": "香港高級程度會考（12-13年級）",
       "from": "2010/09",
       "to": "2012/08",
-      "institute": "順德聯誼總會譚伯羽中學",
-      "scores": "物理: A | 純數學: B",
+      "institute": "順德聯誼總會譚伯羽中學，香港",
+      "scores": "物理：A | 純數學：B",
       "description": "物理與純數學成績優秀"
     },
     {
-      "title": "香港中學文憑考試 (中四至中五)",
+      "title": "香港中學會考（10-11年級）",
       "from": "2012/09",
       "to": "2015/08",
-      "institute": "順德聯誼總會譚伯羽中學",
-      "scores": "數學: A | 附加數學: A | 化學: A | 物理: B",
+      "institute": "順德聯誼總會譚伯羽中學，香港",
+      "scores": "數學：A | 附加數學：A | 化學：A | 物理：B",
       "description": "成績優秀"
     }
   ]

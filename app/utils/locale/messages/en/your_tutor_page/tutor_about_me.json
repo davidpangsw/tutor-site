@@ -1,5 +1,25 @@
 {
   "title": "About me",
+  "experiences": [
+    {
+      "title": "Full-Time STEM Tutor",
+      "from": "2023/09",
+      "to": "Now",
+      "description": "Teaching at multiple tutoring centers across Metro Vancouver."
+    },
+    {
+      "title": "Part-Time STEM Tutor",
+      "from": "2012/09",
+      "to": "2023/09",
+      "description": "Provided part-time STEM tutoring in Hong Kong since I was pursuing university studies."
+    },
+    {
+      "title": "Software Developer",
+      "from": "2015/09",
+      "to": "2021/09",
+      "description": "Contributed to the software development field in a professional capacity."
+    }
+  ],
   "qualifications": [
     {
       "title": "Diploma of Computer Studies",

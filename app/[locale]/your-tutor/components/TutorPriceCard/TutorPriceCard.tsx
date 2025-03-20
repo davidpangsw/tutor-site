@@ -4,8 +4,8 @@ import { Card, Row, Col, Container, CardBody, CardHeader } from 'react-bootstrap
 
 const OneToOneServiceCard = () => {
   const t = useTranslations('your_tutor_page.tutorPriceCard.oneToOneServiceCard');
-  const price = "30";
-  const minHours = 1.5;
+  const price = "35";
+  const minHours = 2;
   return (
     <Card className='p-0'>
       <CardHeader>

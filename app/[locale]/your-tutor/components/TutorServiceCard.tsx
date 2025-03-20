@@ -47,7 +47,7 @@ const TitlePointCard = (titlePoint: TitlePoint, index: React.Key) => {
 
 const TutorServiceCard = () => {
   const t = useTranslations('your_tutor_page');
-  const { title, titlePoints } = t.raw('tutorServiceCard') as Translation;
+  const { title, titlePoints } = t.raw('tutor_service_card') as Translation;
 
   return (
     <div>

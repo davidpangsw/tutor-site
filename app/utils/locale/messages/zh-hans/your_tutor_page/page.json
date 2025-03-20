@@ -1,78 +1,14 @@
 {
-  "tutorServiceCard": {
-    "title": "科目与服务",
-    "titlePoints": [
-      {
-        "title": "7 - 12 年级",
-        "subtitle": "单一服务涵盖多科目",
-        "points": [
-          {
-            "bold": "数学",
-            "text": "包括 Pre-Calculus、Calculus、AP/IB/SAT 等"
-          },
-          { "bold": "计算机" },
-          { "bold": "统计学" },
-          { "bold": "物理" },
-          { "bold": "化学" },
-          { "bold": "科学", "text": "至 9 年级" },
-          {
-            "bold": "其他科目和年级",
-            "text": "可根据需求提供"
-          }
-        ]
-      },
-      {
-        "title": "大学科目",
-        "subtitle": "克服大学课程中的困难",
-        "points": [
-          { "bold": "数学", "text": "一、二年级" },
-          { "bold": "计算机科学", "text": "一年级" }
-        ]
-      },
-      {
-        "title": "特别/趣味科目",
-        "subtitle": "培养数学兴趣的最佳选择",
-        "points": [
-          { "bold": "数学（竞赛）", "text": "4 - 9 年级" },
-          { "bold": "魔方", "text": "适合 6 年级及以上" },
-          {
-            "bold": "Minecraft 编程（Python）",
-            "text": "适合 6 年级及以上"
-          },
-          {
-            "bold": "其他科目和年级",
-            "text": "可根据需求提供"
-          }
-        ]
-      },
-      {
-        "title": "支持多种语言",
-        "subtitle": "",
-        "points": [{ "bold": "英语" }, { "bold": "粤语" }, { "bold": "普通话" }]
-      },
-      {
-        "title": "额外学习材料",
-        "subtitle": "根据学生需要量身定制",
-        "points": [
-          { "bold": "补充笔记" },
-          { "bold": "补充作业" },
-          { "bold": "电子抽认卡" },
-          { "bold": "互动网站" },
-          { "bold": "视频" }
-        ]
-      }
-    ]
-  },
   "tutorPriceCard": {
     "title": "价格",
-    "extraCostDepends": "额外费用取决于以下因素：",
+    "extraCostDepends": "*额外费用取决于以下因素：",
     "oneToOneServiceCard": {
       "title": "一对一服务",
-      "body": "价格（每小时）：${price} + 额外费用；最低{minHours}小时"
+      "body": "价格（每小时）：${price}*；最低{minHours}小时"
     },
     "oneToTwoServiceCard": {
       "title": "一对二服务",
-      "body": "价格（每小时）：${price} + 额外费用；最低{minHours}小时"
+      "body": "价格（每小时）：${price}*；最低{minHours}小时"
     },
     "tutoringCenterEmploymentCard": {
       "title": "补习中心就业",

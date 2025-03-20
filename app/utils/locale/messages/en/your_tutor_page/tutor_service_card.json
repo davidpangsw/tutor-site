@@ -1,0 +1,76 @@
+{
+  "title": "Subjects",
+  "titlePoints": [
+    {
+      "title": "BC Grade 8 - 10",
+      "subtitle": "Multiple BC Higher grade subjects",
+      "points": [
+        { "bold": "Mathematics" },
+        { "bold": "Computer Science" },
+        { "bold": "Science" },
+        { "bold": "Other Subjects and Grades", "text": "Available upon request" }
+      ]
+    },
+    {
+      "title": "BC Grade 11 - 12",
+      "subtitle": "Multiple BC Higher grade subjects",
+      "points": [
+        { "bold": "Pre-Calculus" },
+        { "bold": "Foundations of Mathematics" },
+        { "bold": "Calculus" },
+        { "bold": "Physics" },
+        { "bold": "Computer Science" },
+        { "bold": "Chemistry" },
+        { "bold": "Other Subjects", "text": "Available upon request" }
+      ]
+    },
+    {
+      "title": "IB / SAT",
+      "subtitle": "Overcome difficulties in IB / SAT exams",
+      "points": [
+        { "bold": "IB Mathematics: Analysis and Approaches (SL/HL)" },
+        { "bold": "IB Mathematics: Analysis and Interpretation (SL/HL)" },
+        { "bold": "IB Physics (SL/HL)" },
+        { "bold": "IB Computer Science (SL/HL)" },
+        { "bold": "SAT Math Section" },
+        {}
+      ]
+    },
+    {
+      "title": "AP",
+      "subtitle": "Overcome difficulties in AP exams",
+      "points": [
+        { "bold": "AP Precalculus" },
+        { "bold": "AP Calculus AB" },
+        { "bold": "AP Calculus BC" },
+        { "bold": "AP Computer Science A" },
+        { "bold": "AP Computer Science Principles" },
+        { "bold": "AP Physics 1" },
+        { "bold": "AP Physics 2" },
+        { "bold": "AP Physics C: Mechanics" },
+        { "bold": "AP Physics C: Electricity and Magnetism" },
+        { "bold": "AP Statistics" },
+        {}
+      ]
+    },
+    {
+      "title": "University Level",
+      "subtitle": "Overcome difficulties in university courses",
+      "points": [
+        { "bold": "Math", "text": "Year 1 - 2" },
+        { "bold": "Computer Science", "text": "Year 1" }
+      ]
+    },
+    {
+      "title": "Special / Fun Subjects",
+      "subtitle": "Best for nurturing interest in STEM",
+      "points": [
+        { "bold": "Math (Competition)", "text": "Grade 4 - Grade 9" },
+        { "bold": "Rubik's Cube", "text": "Suitable for Grade 6 or above" },
+        { "bold": "Minecraft Programming", "text": "Suitable for Grade 6 or above" },
+        { "bold": "Game Programming (Godot)" },
+        { "bold": "Other Subjects and Grades", "text": "Available upon request" }
+      ]
+    }
+  ]
+}

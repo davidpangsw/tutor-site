@@ -1,78 +1,14 @@
 {
-  "tutorServiceCard": {
-    "title": "科目與服務",
-    "titlePoints": [
-      {
-        "title": "7 - 12 年級",
-        "subtitle": "單一服務涵蓋多科目",
-        "points": [
-          {
-            "bold": "數學",
-            "text": "包括 Pre-Calculus、Calculus、AP/IB/SAT 等"
-          },
-          { "bold": "計算機" },
-          { "bold": "統計學" },
-          { "bold": "物理" },
-          { "bold": "化學" },
-          { "bold": "科學", "text": "至 9 年級" },
-          {
-            "bold": "其他科目和年級",
-            "text": "可根據需求提供"
-          }
-        ]
-      },
-      {
-        "title": "大學科目",
-        "subtitle": "克服大學課程中的困難",
-        "points": [
-          { "bold": "數學", "text": "一、二年級" },
-          { "bold": "計算機科學", "text": "一年級" }
-        ]
-      },
-      {
-        "title": "特別/趣味科目",
-        "subtitle": "培養數學興趣的最佳選擇",
-        "points": [
-          { "bold": "數學（競賽）", "text": "4 - 9 年級" },
-          { "bold": "魔方", "text": "適合 6 年級及以上" },
-          {
-            "bold": "Minecraft 編程（Python）",
-            "text": "適合 6 年級及以上"
-          },
-          {
-            "bold": "其他科目和年級",
-            "text": "可根據需求提供"
-          }
-        ]
-      },
-      {
-        "title": "支持多種語言",
-        "subtitle": "",
-        "points": [{ "bold": "英語" }, { "bold": "粵語" }, { "bold": "普通話" }]
-      },
-      {
-        "title": "額外學習材料",
-        "subtitle": "根據學生需要量身定制",
-        "points": [
-          { "bold": "補充筆記" },
-          { "bold": "補充作業" },
-          { "bold": "電子抽認卡" },
-          { "bold": "互動網站" },
-          { "bold": "視頻" }
-        ]
-      }
-    ]
-  },
   "tutorPriceCard": {
     "title": "價格",
-    "extraCostDepends": "額外費用取決於以下因素：",
+    "extraCostDepends": "*額外費用取決於以下因素：",
     "oneToOneServiceCard": {
       "title": "一對一服務",
-      "body": "價格（每小時）：${price} + 額外費用；最低{minHours}小時"
+      "body": "價格（每小時）：${price}*；最低{minHours}小時"
     },
     "oneToTwoServiceCard": {
       "title": "一對二服務",
-      "body": "價格（每小時）：${price} + 額外費用；最低{minHours}小時"
+      "body": "價格（每小時）：${price}*；最低{minHours}小時"
     },
     "tutoringCenterEmploymentCard": {
       "title": "補習中心就業",

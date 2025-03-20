@@ -1,121 +1,14 @@
 {
-  "tutorServiceCard": {
-    "title": "Subjects and Services",
-    "titlePoints": [
-      {
-        "title": "Grade 7 - 12",
-        "subtitle": "Multiple subjects supported in a single service",
-        "points": [
-          {
-            "bold": "Math",
-            "text": "Pre-Calculus, Calculus, AP/IB/SAT, and more"
-          },
-          {
-            "bold": "Computer"
-          },
-          {
-            "bold": "Statistics"
-          },
-          {
-            "bold": "Physics"
-          },
-          {
-            "bold": "Chemistry"
-          },
-          {
-            "bold": "Science",
-            "text": "Up to grade 9"
-          },
-          {
-            "bold": "Other Subjects and Grades",
-            "text": "Available upon request"
-          }
-        ]
-      },
-      {
-        "title": "University Level",
-        "subtitle": "Overcome difficulties in university courses",
-        "points": [
-          {
-            "bold": "Math",
-            "text": "Year 1 - 2"
-          },
-          {
-            "bold": "Computer Science",
-            "text": "Year 1"
-          }
-        ]
-      },
-      {
-        "title": "Special / Fun Subjects",
-        "subtitle": "Best for nurturing interest in math",
-        "points": [
-          {
-            "bold": "Math (Competition)",
-            "text": "Grade 4 - Grade 9"
-          },
-          {
-            "bold": "Rubik's Cube",
-            "text": "Suitable for Grade 6 or above"
-          },
-          {
-            "bold": "Minecraft Programming (Python)",
-            "text": "Suitable for Grade 6 or above"
-          },
-          {
-            "bold": "Other Subjects and Grades",
-            "text": "Available upon request"
-          }
-        ]
-      },
-      {
-        "title": "Support Multiple Languages",
-        "subtitle": "",
-        "points": [
-          {
-            "bold": "English"
-          },
-          {
-            "bold": "Cantonese"
-          },
-          {
-            "bold": "Mandarin"
-          }
-        ]
-      },
-      {
-        "title": "Additional Learning Materials",
-        "subtitle": "Tailored to Students' Needs",
-        "points": [
-          {
-            "bold": "Supplementary Notes"
-          },
-          {
-            "bold": "Supplementary Homework"
-          },
-          {
-            "bold": "Digital Flashcards"
-          },
-          {
-            "bold": "Interactive Websites"
-          },
-          {
-            "bold": "Videos"
-          }
-        ]
-      }
-    ]
-  },
   "tutorPriceCard": {
     "title": "Prices",
-    "extraCostDepends": "Extra cost depends on the following factors:",
+    "extraCostDepends": "*Extra cost depends on the following factors:",
     "oneToOneServiceCard": {
       "title": "One-to-One Service",
-      "body": "Price (per hour): ${price} + Extra cost; {minHours}-hour minimum"
+      "body": "Price (per hour): ${price}*; {minHours}-hour minimum"
     },
     "oneToTwoServiceCard": {
       "title": "One-to-Two Service",
-      "body": "Price (per hour): ${price} + Extra cost; {minHours}-hour minimum"
+      "body": "Price (per hour): ${price}*; {minHours}-hour minimum"
     },
     "tutoringCenterEmploymentCard": {
       "title": "Tutoring Center Employment",

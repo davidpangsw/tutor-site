@@ -1,0 +1,76 @@
+{
+  "title": "科目",
+  "titlePoints": [
+    {
+      "title": "BC 8 - 10年級",
+      "subtitle": "多個BC高年級科目",
+      "points": [
+        { "bold": "數學" },
+        { "bold": "電腦科學" },
+        { "bold": "科學" },
+        { "bold": "其他科目與年級", "text": "可按需提供" }
+      ]
+    },
+    {
+      "title": "BC 11 - 12年級",
+      "subtitle": "多個BC高年級科目",
+      "points": [
+        { "bold": "預科微積分" },
+        { "bold": "數學基礎" },
+        { "bold": "微積分" },
+        { "bold": "物理" },
+        { "bold": "電腦科學" },
+        { "bold": "化學" },
+        { "bold": "其他科目", "text": "可按需提供" }
+      ]
+    },
+    {
+      "title": "IB / SAT",
+      "subtitle": "克服IB / SAT考試的難點",
+      "points": [
+        { "bold": "IB數學：分析與方法 (SL/HL)" },
+        { "bold": "IB數學：應用與解釋 (SL/HL)" },
+        { "bold": "IB物理 (SL/HL)" },
+        { "bold": "IB電腦科學 (SL/HL)" },
+        { "bold": "SAT數學部分" },
+        {}
+      ]
+    },
+    {
+      "title": "AP",
+      "subtitle": "克服AP考試的難點",
+      "points": [
+        { "bold": "AP預科微積分" },
+        { "bold": "AP微積分AB" },
+        { "bold": "AP微積分BC" },
+        { "bold": "AP電腦科學A" },
+        { "bold": "AP電腦科學原理" },
+        { "bold": "AP物理1" },
+        { "bold": "AP物理2" },
+        { "bold": "AP物理C：力學" },
+        { "bold": "AP物理C：電磁學" },
+        { "bold": "AP統計學" },
+        {}
+      ]
+    },
+    {
+      "title": "大學水平",
+      "subtitle": "克服大學課程的難點",
+      "points": [
+        { "bold": "數學", "text": "第1 - 2年" },
+        { "bold": "電腦科學", "text": "第1年" }
+      ]
+    },
+    {
+      "title": "特殊/趣味科目",
+      "subtitle": "激發對STEM興趣的最佳選擇",
+      "points": [
+        { "bold": "數學（競賽）", "text": "4年級 - 9年級" },
+        { "bold": "魔術方塊", "text": "適合6年級及以上" },
+        { "bold": "Minecraft編程", "text": "適合6年級及以上" },
+        { "bold": "遊戲編程（Godot）" },
+        { "bold": "其他科目與年級", "text": "可按需提供" }
+      ]
+    }
+  ]
+}

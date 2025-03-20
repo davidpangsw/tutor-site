@@ -1,36 +1,56 @@
 {
   "title": "关于我",
+  "experiences": [
+    {
+      "title": "全职STEM辅导教师",
+      "from": "2023/09",
+      "to": "至今",
+      "description": "在大温哥华地区的多家辅导中心授课。"
+    },
+    {
+      "title": "兼职STEM辅导教师",
+      "from": "2012/09",
+      "to": "2023/09",
+      "description": "自从我在香港读大学时起，提供兼职STEM辅导。"
+    },
+    {
+      "title": "软件开发员",
+      "from": "2015/09",
+      "to": "2021/09",
+      "description": "在软件开发领域以专业身份作出贡献。"
+    }
+  ],
   "qualifications": [
     {
-      "title": "电脑研究文凭",
+      "title": "计算机研究文凭",
       "from": "2021/09",
       "to": "2023/08",
-      "institute": "加拿大兰加拉学院",
-      "scores": "专业 GPA: 4.33/4.33",
-      "description": "所有计算机课程均获 A+"
+      "institute": "兰加拉学院，加拿大",
+      "scores": "主修GPA：4.33/4.33",
+      "description": "所有计算机课程全获A+"
     },
     {
-      "title": "理学士 (数学)",
+      "title": "理学学士，数学",
       "from": "2012/09",
       "to": "2015/08",
-      "institute": "香港中文大学",
-      "scores": "专业 GPA: 3.318/4.000",
-      "description": "亚洲著名数学系"
+      "institute": "香港中文大学，香港",
+      "scores": "主修GPA：3.318/4.000",
+      "description": "亚洲知名的数学系"
     },
     {
-      "title": "香港高级程度会考 (中六至中七)",
+      "title": "香港高级程度会考（12-13年级）",
       "from": "2010/09",
       "to": "2012/08",
-      "institute": "顺德联谊总会谭伯羽中学",
-      "scores": "物理: A | 纯数学: B",
-      "description": "物理与纯数学成绩优秀"
+      "institute": "顺德联谊总会谭伯羽中学，香港",
+      "scores": "物理：A | 纯数学：B",
+      "description": "物理和纯数学成绩优秀"
     },
     {
-      "title": "香港中学文凭考试 (中四至中五)",
+      "title": "香港中学会考（10-11年级）",
       "from": "2012/09",
       "to": "2015/08",
-      "institute": "顺德联谊总会谭伯羽中学",
-      "scores": "数学: A | 附加数学: A | 化学: A | 物理: B",
+      "institute": "顺德联谊总会谭伯羽中学，香港",
+      "scores": "数学：A | 附加数学：A | 化学：A | 物理：B",
       "description": "成绩优秀"
     }
   ]

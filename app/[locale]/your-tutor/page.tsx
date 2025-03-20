@@ -6,11 +6,13 @@ import TutorServiceCard from './components/TutorServiceCard';
 import WhyTutor from './components/WhyTutor';
 import ContactCard from '@/app/utils/contacts/ContactCard';
 import TutorMyStory from './components/TutorMyStory';
+import TutorWhyMe from './components/TutorWhyMe';
 
 
 const YourTutorPage = () => {
   return (
     <Container className='px-0'>
+      <Row className='py-2'><Col className='px-md-4'> <TutorWhyMe /> </Col> </Row>
       <Row className='py-2'><Col className='px-md-4'> <ContactCard /> </Col> </Row>
       <Row className='py-2'><Col className='px-md-4'> <TutorAboutMe /> </Col> </Row>
       <Row className='py-2'><Col className='px-md-4'> <TutorServiceCard /> </Col> </Row>
