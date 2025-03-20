@@ -19,7 +19,7 @@ const ContactCard = (props: ContactCardProps) => {
     throw new Error("ContactContext is undefined. (Is it wrapped by Provider?");
   }
   const { contacts } = context;
-  const { text, wechat, email, wechat_url } = contacts;
+  const { text, wechat, email } = contacts;
   const [copySuccess, setCopySuccess] = useState('');
   const copyToClipboard = async (label: string, text: string) => {
 
