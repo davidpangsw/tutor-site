@@ -1,14 +1,14 @@
 {
   "tutorPriceCard": {
     "title": "價格",
-    "extraCostDepends": "*額外費用取決於以下因素：",
+    "extraCostDepends": "*費用取決於以下因素：",
     "oneToOneServiceCard": {
       "title": "一對一服務",
-      "body": "價格（每小時）：${price}*；最低{minHours}小時"
+      "body": "最低{minHours}小時"
     },
     "oneToTwoServiceCard": {
       "title": "一對二服務",
-      "body": "價格（每小時）：${price}*；最低{minHours}小時"
+      "body": "最低{minHours}小時"
     },
     "tutoringCenterEmploymentCard": {
       "title": "補習中心就業",

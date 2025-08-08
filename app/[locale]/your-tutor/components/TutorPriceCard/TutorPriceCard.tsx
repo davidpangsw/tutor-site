@@ -13,7 +13,7 @@ const OneToOneServiceCard = () => {
       </CardHeader>
       <CardBody>
         <h5>
-          {t('body', { price, minHours })}
+          {t('body', { minHours })}
         </h5>
       </CardBody>
     </Card>
@@ -31,7 +31,7 @@ const OneToTwoServiceCard = () => {
       </CardHeader>
       <CardBody>
         <h5>
-          {t('body', { price, minHours })}
+          {t('body', { minHours })}
         </h5>
       </CardBody>
     </Card>
