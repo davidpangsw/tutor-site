@@ -1,14 +1,13 @@
 {
   "tutorPriceCard": {
     "title": "Prices",
-    "extraCostDepends": "*Cost depends on the following factors:",
     "oneToOneServiceCard": {
       "title": "One-to-One Service",
-      "body": "{minHours}-hour minimum"
+      "body": "${price}/hour; up to {discount}% off discount; {minHours}-hour minimum"
     },
     "oneToTwoServiceCard": {
       "title": "One-to-Two Service",
-      "body": "{minHours}-hour minimum"
+      "body": "${price}/hour; up to {discount}% off discount; {minHours}-hour minimum"
     },
     "tutoringCenterEmploymentCard": {
       "title": "Tutoring Center Employment",

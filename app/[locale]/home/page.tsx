@@ -5,6 +5,13 @@ import Image from 'next/image';
 import LinkCard from '@/app/utils/components/LinkCard';
 // import photo from '@/public/assets/photo.jpg';
 import { useTranslations } from 'next-intl';
+import TutorWhyMe from './components/TutorWhyMe';
+import ContactCard from '@/app/utils/contacts/ContactCard';
+import TutorAboutMe from './components/TutorAboutMe';
+import TutorServiceCard from './components/TutorServiceCard';
+import WhyTutor from './components/WhyTutor';
+import TutorPriceCard from './components/TutorPriceCard';
+import TutorCallToAction from './components/TutorCallToAction';
 
 const photo = '/assets/photo.jpg';
 const HomePageIntro = () => {
@@ -56,7 +63,8 @@ const HomePage = () => {
         <title>Home Page</title>
         <meta name="description" content="This is the home page" />
       </div>
-      <Container fluid>
+      {/* <HomePageCards /> */}
+      <div className='d-flex flex-column px-0 fs-6 m-0'>
         <Row>
           <Col className='d-flex justify-content-center' md={{ span: "auto", order: 1 }}>
             <Image
@@ -70,12 +78,18 @@ const HomePage = () => {
           <Col md={{ order: 12 }}>
             <h1 className='bona-nova-sc-bold'>David</h1>
             <h6 className='bona-nova-sc-regular'>{t('STEM Tutor')}</h6>
-            <h6 className='bona-nova-sc-regular'>{t('Full-stack Developer')}</h6>
+            {/* <h6 className='bona-nova-sc-regular'>{t('Full-stack Developer')}</h6> */}
             <HomePageIntro />
           </Col>
         </Row>
-      </Container>
-      <HomePageCards />
+        <Row className='py-2'><Col className='px-md-4'> <TutorAboutMe /> </Col> </Row>
+        <Row className='py-2'><Col className='px-md-4'> <WhyTutor /> </Col> </Row>
+        <Row className='py-2'><Col className='px-md-4'> <TutorWhyMe /> </Col> </Row>
+        <Row className='py-2'><Col className='px-md-4'> <TutorServiceCard /> </Col> </Row>
+        <Row className='py-2'><Col className='px-md-4'> <TutorPriceCard /> </Col> </Row>
+        <Row className='py-2'><Col className='px-md-4'> <ContactCard /> </Col> </Row>
+        <Row className='py-2'><Col className='px-md-4'> <TutorCallToAction /> </Col> </Row>
+      </div>
     </div>
   )
 }

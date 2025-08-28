@@ -32,7 +32,7 @@ const WhyTutor = () => {
           <SummaryCard
             key={index}
             className="p-3"
-            style={{ width: 500, minHeight: '30rem' }}
+            style={{ width: 400, minHeight: '30rem' }}
             title={card.title}
             description={card.description}
             points={card.points}

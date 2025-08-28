@@ -4,7 +4,8 @@ import { Card, Row, Col, Container, CardBody, CardHeader } from 'react-bootstrap
 
 const OneToOneServiceCard = () => {
   const t = useTranslations('your_tutor_page.tutorPriceCard.oneToOneServiceCard');
-  // const price = "35";
+  const price = "70";
+  const discount = "50";
   const minHours = 2;
   return (
     <Card className='p-0'>
@@ -13,7 +14,7 @@ const OneToOneServiceCard = () => {
       </CardHeader>
       <CardBody>
         <h5>
-          {t('body', { minHours })}
+          {t('body', { price, discount, minHours })}
         </h5>
       </CardBody>
     </Card>
@@ -22,7 +23,8 @@ const OneToOneServiceCard = () => {
 
 const OneToTwoServiceCard = () => {
   const t = useTranslations('your_tutor_page.tutorPriceCard.oneToTwoServiceCard');
-  // const price = "50";
+  const price = "100";
+  const discount = "50";
   const minHours = 1.5;
   return (
     <Card className='p-0'>
@@ -31,7 +33,7 @@ const OneToTwoServiceCard = () => {
       </CardHeader>
       <CardBody>
         <h5>
-          {t('body', { minHours })}
+          {t('body', { price, discount, minHours })}
         </h5>
       </CardBody>
     </Card>
@@ -63,14 +65,16 @@ const TutorPriceCard = () => {
       <Card className="p-3">
         <Container>
           <Row>
-            <Col
-              md={6}
-            >
+            <Col md={4}>
               <Row className='p-3'><OneToOneServiceCard /></Row>
+            </Col>
+            <Col md={4}>
               <Row className='p-3'><OneToTwoServiceCard /></Row>
+            </Col>
+            <Col md={4}>
               <Row className='p-3'><TutoringCenterEmploymentCard /></Row>
             </Col>
-            <Col
+            {/* <Col
               md={6}
             >
               <p>{t('extraCostDepends')}</p>
@@ -81,7 +85,7 @@ const TutorPriceCard = () => {
                 <li className='list-group-item'>{c('SessionLength')}</li>
                 <li className='list-group-item'>{c('Subject')}</li>
               </ul>
-            </Col>
+            </Col> */}
           </Row>
         </Container>
       </Card>

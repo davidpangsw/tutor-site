@@ -14,7 +14,6 @@ const TutorWhyMe = () => {
   // Fetch title, points, and call-to-action from translations
   const title = t('title');
   const points = t.raw('points') as Point[];
-  const callToAction = t('call_to_action');
 
   console.log(points)
 
@@ -44,15 +43,6 @@ const TutorWhyMe = () => {
               </Col>
             )
           })}
-        </Row>
-
-        {/* Call-to-Action */}
-        <Row className="mt-5">
-          <Col className="text-center">
-            <Button variant="primary" size="lg">
-              {callToAction}
-            </Button>
-          </Col>
         </Row>
       </Container>
     </div>

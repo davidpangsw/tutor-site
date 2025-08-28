@@ -21,7 +21,8 @@ export default getRequestConfig(async ({ requestLocale }) => {
       'tutor_why_me': (await import(`../messages/${locale}/your_tutor_page/tutor_why_me.json`)).default,
       'tutor_service_card': (await import(`../messages/${locale}/your_tutor_page/tutor_service_card.json`)).default,
       'tutor_about_me': (await import(`../messages/${locale}/your_tutor_page/tutor_about_me.json`)).default,
-      'tutor_my_story': (await import(`../messages/${locale}/your_tutor_page/tutor_my_story.json`)).default,
+      'tutor_call_to_action': (await import(`../messages/${locale}/your_tutor_page/tutor_call_to_action.json`)).default,
+      // 'tutor_my_story': (await import(`../messages/${locale}/your_tutor_page/tutor_my_story.json`)).default,
     },
     'learn': {
       ...(await import(`../messages/${locale}/learn.json`)).default,

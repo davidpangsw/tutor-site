@@ -2,6 +2,11 @@ import React from 'react'
 import { Col, Card, Container, Row, CardImg, CardSubtitle, CardTitle } from 'react-bootstrap';
 import { useTranslations } from 'next-intl';
 
+interface Introduction {
+  title: string,
+  content: string,
+};
+
 interface WorkExperience {
   "title": string,
   "from": string,
@@ -19,8 +24,9 @@ interface Qualification {
 }
 
 const TutorAboutMe = () => {
-  const photo = '/assets/photo.jpg';
+  // const photo = '/assets/photo.jpg';
   const t = useTranslations('your_tutor_page.tutor_about_me');
+  const intros = t.raw('introduction') as Introduction[];
   const exps = t.raw('experiences') as WorkExperience[];
   const qualis = t.raw('qualifications') as Qualification[];
   return (
@@ -28,9 +34,18 @@ const TutorAboutMe = () => {
       <h1>{t('title')}</h1>
       <Container>
         <Row>
-          <Col className="p-0 d-flex justify-content-center" md={{ span: 12, order: 1 }} >
-            <CardImg src={photo} style={{ width: "100%", height: "auto", maxWidth: "320px" }} />
+          <Col className="p-0" md={{ span: 12, order: 1 }} >
+            {intros.map(({ title, content }) => {
+              return (
+                <div key={title}>
+                  <h3>{title}</h3>
+                  <p style={{ whiteSpace: "pre-line" }}>{content}</p>
+                </div>
+              )
+            })}
           </Col>
+        </Row>
+        <Row>
           <Col className="p-0" md={{ span: 12, order: 1 }} >
             <Card>
               {exps.map((e) => {
