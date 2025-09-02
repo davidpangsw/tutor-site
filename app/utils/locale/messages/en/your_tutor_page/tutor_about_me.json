@@ -48,7 +48,7 @@
       "description": "Famous Math Department in Asia"
     },
     {
-      "title": "Hong Kong Advanced Level Examination (Grade 12-13)",
+      "title": "Hong Kong Advanced Level Examination (Grade 13)",
       "from": "2010/09",
       "to": "2012/08",
       "institute": "STFA Tam Pak Yu College, Hong Kong",
@@ -56,9 +56,9 @@
       "description": "Fairly Good Grades in Physics and Pure Maths"
     },
     {
-      "title": "Hong Kong Certificate of Education Examination (Grade 10-11)",
-      "from": "2012/09",
-      "to": "2015/08",
+      "title": "Hong Kong Certificate of Education Examination (Grade 11)",
+      "from": "2005/09",
+      "to": "2010/08",
       "institute": "STFA Tam Pak Yu College, Hong Kong",
       "scores": "Maths: A | Additional Maths: A | Chemistry: A | Physics: B",
       "description": "Fairly Good Grades"

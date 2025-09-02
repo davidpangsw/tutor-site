@@ -13,7 +13,14 @@ const TutorCallToAction = () => {
         {/* Call-to-Action */}
         <Row className="mt-5">
           <Col className="text-center">
-            <Button variant="primary" size="lg">
+            <Button 
+              variant="primary" 
+              size="lg"
+              href="https://forms.gle/aqiwB1zVSEV9AoX77"
+              target="_blank"
+              rel="noopener noreferrer"
+              as="a"
+            >
               {callToAction}
             </Button>
           </Col>

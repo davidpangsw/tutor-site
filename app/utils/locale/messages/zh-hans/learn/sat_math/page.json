@@ -7,6 +7,10 @@
             "url": "https://satsuite.collegeboard.org/sat/whats-on-the-test/math/overview"
         },
         "date": "2025/Feb/04"
+    },
+    "practice": {
+        "title": "练习",
+        "description": "互动练习帮助你建立基础。"
     }
 }
 

@@ -6,7 +6,7 @@ const OneToOneServiceCard = () => {
   const t = useTranslations('your_tutor_page.tutorPriceCard.oneToOneServiceCard');
   const price = "70";
   const discount = "50";
-  const minHours = 2;
+  const minHours = 1.5;
   return (
     <Card className='p-0'>
       <CardHeader>
