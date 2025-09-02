@@ -1,8 +1,8 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 // import Image from 'react-bootstrap/Image';
 import Image from 'next/image';
-import LinkCard from '@/app/utils/components/LinkCard';
+// import LinkCard from '@/app/utils/components/LinkCard';
 // import photo from '@/public/assets/photo.jpg';
 import { useTranslations } from 'next-intl';
 import TutorWhyMe from './components/TutorWhyMe';
@@ -20,6 +20,7 @@ const HomePageIntro = () => {
     <p className='bona-nova-sc-regular'>{t('intro')}</p>
   );
 }
+/*
 const HomePageCards = () => {
   const t = useTranslations('home_page');
   const cards = [
@@ -53,6 +54,7 @@ const HomePageCards = () => {
     </Container>
   );
 }
+*/
 
 const HomePage = () => {
   const t = useTranslations('common');

@@ -57,7 +57,7 @@ const TutoringCenterEmploymentCard = () => {
 }
 
 const TutorPriceCard = () => {
-  const c = useTranslations('common');
+  // const c = useTranslations('common');
   const t = useTranslations('your_tutor_page.tutorPriceCard');
   return (
     <div>

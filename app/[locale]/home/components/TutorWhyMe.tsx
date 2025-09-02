@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import React from 'react';
-import { Row, Col, Card, CardBody, CardTitle, Button, Container } from 'react-bootstrap';
+import { Row, Col, Card, CardBody, CardTitle, Container } from 'react-bootstrap';
 // import './TutorWhyMe.css'; // Optional: For custom styling
 
 interface Point {

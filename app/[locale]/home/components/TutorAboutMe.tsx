@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, Card, Container, Row, CardImg, CardSubtitle, CardTitle } from 'react-bootstrap';
+import { Col, Card, Container, Row, CardSubtitle, CardTitle } from 'react-bootstrap';
 import { useTranslations } from 'next-intl';
 
 interface Introduction {
