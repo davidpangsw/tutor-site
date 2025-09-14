@@ -7,5 +7,30 @@
   "developerCard": {
     "title": "您的開發者",
     "description": "專業的全棧開發，促進您的業務增長"
+  },
+  "tutor_what_i_provide": {
+    "title": "我提供的服務",
+    "services": [
+      {
+        "title": "功課輔導",
+        "description": "協助完成日常作業和所有STEM科目的專題項目"
+      },
+      {
+        "title": "標準考試準備",
+        "description": "全面準備AP、IB和其他標準化考試"
+      },
+      {
+        "title": "大學數學輔導",
+        "description": "為大學程度課程及更高級別提供進階數學支援"
+      },
+      {
+        "title": "資優學生進階輔導",
+        "description": "為有天賦和高成就學生設計的挑戰性課程"
+      },
+      {
+        "title": "兒童趣味科目",
+        "description": "引人入勝的互動學習體驗，讓STEM變得有趣"
+      }
+    ]
   }
 }

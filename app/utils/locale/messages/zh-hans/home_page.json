@@ -7,5 +7,30 @@
   "developerCard": {
     "title": "您的开发者",
     "description": "专业的全栈开发，促进您的业务增长"
+  },
+  "tutor_what_i_provide": {
+    "title": "我提供的服务",
+    "services": [
+      {
+        "title": "作业辅导",
+        "description": "协助完成日常作业和所有STEM科目的项目"
+      },
+      {
+        "title": "标准考试准备",
+        "description": "全面准备AP、IB和其他标准化考试"
+      },
+      {
+        "title": "大学数学辅导",
+        "description": "为大学级别课程及更高级别提供高级数学支持"
+      },
+      {
+        "title": "资优学生高级辅导",
+        "description": "为有天赋和高成就学生设计的挑战性课程"
+      },
+      {
+        "title": "儿童趣味科目",
+        "description": "引人入胜的互动学习体验，让STEM变得有趣"
+      }
+    ]
   }
 }

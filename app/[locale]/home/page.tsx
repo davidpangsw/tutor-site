@@ -12,6 +12,7 @@ import TutorServiceCard from './components/TutorServiceCard';
 import WhyTutor from './components/WhyTutor';
 import TutorPriceCard from './components/TutorPriceCard';
 import TutorCallToAction from './components/TutorCallToAction';
+import TutorWhatIProvide from './components/TutorWhatIProvide';
 
 const photo = '/assets/photo.jpg';
 const HomePageIntro = () => {
@@ -84,13 +85,18 @@ const HomePage = () => {
             <HomePageIntro />
           </Col>
         </Row>
-        <Row className='py-2'><Col className='px-md-4'> <TutorAboutMe /> </Col> </Row>
+        <Row className='py-2'><Col className='px-md-4'> <TutorCallToAction /> </Col> </Row>
+        <Row className='py-2'><Col className='px-md-4'> <ContactCard /> </Col> </Row>
+        
+        <Row className='py-2'><Col className='px-md-4'> <TutorWhatIProvide /> </Col> </Row>
+        {/*
         <Row className='py-2'><Col className='px-md-4'> <WhyTutor /> </Col> </Row>
+        */}
         <Row className='py-2'><Col className='px-md-4'> <TutorWhyMe /> </Col> </Row>
+
         <Row className='py-2'><Col className='px-md-4'> <TutorServiceCard /> </Col> </Row>
         <Row className='py-2'><Col className='px-md-4'> <TutorPriceCard /> </Col> </Row>
-        <Row className='py-2'><Col className='px-md-4'> <ContactCard /> </Col> </Row>
-        <Row className='py-2'><Col className='px-md-4'> <TutorCallToAction /> </Col> </Row>
+        <Row className='py-2'><Col className='px-md-4'> <TutorAboutMe /> </Col> </Row>
       </div>
     </div>
   )

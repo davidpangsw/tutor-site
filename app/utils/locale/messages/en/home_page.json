@@ -7,5 +7,30 @@
   "developerCard": {
     "title": "Your Developer",
     "description": "Professional full-stack development to boost your business growth"
+  },
+  "tutor_what_i_provide": {
+    "title": "What I Provide",
+    "services": [
+      {
+        "title": "Homework Help",
+        "description": "Get assistance with daily assignments and projects across all STEM subjects"
+      },
+      {
+        "title": "Standard Exam Preparation",
+        "description": "Comprehensive preparation for AP, IB, and other standardized exams"
+      },
+      {
+        "title": "University Math Help",
+        "description": "Advanced mathematics support for college-level courses and beyond"
+      },
+      {
+        "title": "Advanced Tutoring for Talented Students",
+        "description": "Challenging curriculum designed for gifted and high-achieving students"
+      },
+      {
+        "title": "Fun Subjects for Kids",
+        "description": "Engaging and interactive learning experiences that make STEM enjoyable"
+      }
+    ]
   }
 }
