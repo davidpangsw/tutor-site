@@ -2,3 +2,5 @@ TutorWhatIProvide is a component consist of several rows of several cards (same 
   cards are: Homework Help, Standard Exam preparation (AP/IB and other), University Math help, Advanced tutoring for talented
   students, Fun subjects for kids. You may rephrase the words. Use a proper alignment, suitable for any screen 
 ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Remember to include your locale file in request.ts

@@ -13,23 +13,51 @@
     "services": [
       {
         "title": "Homework Help",
-        "description": "Get assistance with daily assignments and projects across all STEM subjects"
+        "description": "Daily homework support across all STEM subjects—fast, reliable assistance when you need it most",
+        "features": [
+          "Step-by-step solutions with clear explanations",
+          "Free text message help for urgent questions",
+          "Achieve success in school"
+        ]
       },
       {
         "title": "Standard Exam Preparation",
-        "description": "Comprehensive preparation for AP, IB, and other standardized exams"
+        "description": "Comprehensive preparation for AP, IB, SAT, and other standardized exams—proven strategies that work",
+        "features": [
+          "AP & BC curriculum expertise",
+          "SAT Math score improvement strategies",
+          "Practice tests with detailed feedback",
+          "Test-taking techniques from 10 years of experience"
+        ]
       },
       {
         "title": "University Math Help",
-        "description": "Advanced mathematics support for college-level courses and beyond"
+        "description": "Support for undergraduate mathematics courses—making complex concepts clear and manageable",
+        "features": [
+          "Calculus",
+          "Linear Algebra",
+          "Statistics",
+          "Computer Science",
+          "Discrete Mathematics"
+        ]
       },
       {
         "title": "Advanced Tutoring for Talented Students",
-        "description": "Challenging curriculum designed for gifted and high-achieving students"
+        "description": "Challenging programs for gifted students—going beyond regular curriculum to explore advanced topics",
+        "features": [
+          "Accelerated learning in higher grades",
+          "Advanced problem-solving techniques",
+          "Preparation for math competitions"
+        ]
       },
       {
         "title": "Fun Subjects for Kids",
-        "description": "Engaging and interactive learning experiences that make STEM enjoyable"
+        "description": "Engaging STEM education for young learners—making math and science fun and accessible",
+        "features": [
+          "Math puzzles and problem-solving games",
+          "Introduction to programming concepts",
+          "Building confidence in STEM subjects"
+        ]
       }
     ]
   }
