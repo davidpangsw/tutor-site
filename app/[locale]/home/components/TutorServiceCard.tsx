@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import React from 'react'
 import { Card, CardBody, CardHeader, CardSubtitle } from 'react-bootstrap';
+import styles from './TutorServiceCard.module.css';
 
 interface Point {
   bold: string;
@@ -19,40 +20,45 @@ interface Translation {
 }
 
 const TitlePointCard = (titlePoint: TitlePoint, index: React.Key) => {
-  return <Card
-    key={index}
-    className="m-3 roboto text-wrap justify-content-center"
-    bg={"primary"}
-    text={"light"}
-    style={{ width: 320, height: 500, fontSize: "1.2rem" }}
-  >
-    <CardHeader className="roboto-bold text-center">{titlePoint.title}</CardHeader>
-    <CardSubtitle className="m-3">{titlePoint.subtitle}</CardSubtitle>
-    <CardBody>
-      <ul className="p-0">
-        {titlePoint.points.map((point, index: React.Key) => (
-          <li key={index} style={{ listStyle: 'none' }}>
-            <strong className="roboto-bold">{point.bold}</strong>
-            <span>
-              {point.text ? ' : ' : ''}
-              {point.text}
-            </span>
-          </li>
-        ))
-        }
-      </ul>
-    </CardBody>
-  </Card>
-}
+  return (
+    <Card key={index} className={`${styles.serviceCard} roboto`}>
+      <CardHeader className={`${styles.cardHeader} roboto-bold`}>
+        {titlePoint.title}
+      </CardHeader>
+      <CardSubtitle className={styles.cardSubtitle}>
+        {titlePoint.subtitle}
+      </CardSubtitle>
+      <CardBody className={styles.cardBody}>
+        <ul className={styles.pointsList}>
+          {titlePoint.points.map((point, pointIndex: React.Key) => {
+            if (!point.bold) return null;
+            return (
+              <li key={pointIndex} className={styles.pointItem}>
+                <span className={`${styles.pointBold} roboto-bold`}>
+                  {point.bold}
+                </span>
+                {point.text && (
+                  <span className={styles.pointText}>
+                    {point.text}
+                  </span>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </CardBody>
+    </Card>
+  );
+};
 
 const TutorServiceCard = () => {
   const t = useTranslations('your_tutor_page');
   const { title, titlePoints } = t.raw('tutor_service_card') as Translation;
 
   return (
-    <div>
-      <h1>{title}</h1>
-      <div className="px-0 d-flex flex-row flex-wrap justify-content-center align-content-around">
+    <div className={styles.serviceCardContainer}>
+      <h1 className={`${styles.title} roboto-bold`}>{title}</h1>
+      <div className={styles.cardsGrid}>
         {titlePoints.map(TitlePointCard)}
       </div>
     </div>
