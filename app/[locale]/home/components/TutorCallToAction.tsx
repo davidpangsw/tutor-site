@@ -1,33 +1,28 @@
 
 import { useTranslations } from 'next-intl';
 import React from 'react'
-import { Button, Col, Row, Container } from 'react-bootstrap'
+import { Button, Container } from 'react-bootstrap'
+import styles from './TutorCallToAction.module.css'
 
 const TutorCallToAction = () => {
   const t = useTranslations('your_tutor_page.tutor_call_to_action');
-  const callToAction = t('call_to_action');
+
   return (
-    <div>
-      <Container>
-
-        {/* Call-to-Action */}
-        <Row className="mt-5">
-          <Col className="text-center">
-            <Button 
-              variant="primary" 
-              size="lg"
-              href="https://forms.gle/aqiwB1zVSEV9AoX77"
-              target="_blank"
-              rel="noopener noreferrer"
-              as="a"
-            >
-              {callToAction}
-            </Button>
-          </Col>
-        </Row>
-
-      </Container>
-    </div>
+    <Container className={styles.callToActionSection}>
+      <div className={styles.highlightText}>
+        {t('highlight_text')}
+        <span className={styles.discountBadge}>{t('discount_badge')}</span>
+      </div>
+      <Button
+        className={styles.callToActionButton}
+        href="https://forms.gle/aqiwB1zVSEV9AoX77"
+        target="_blank"
+        rel="noopener noreferrer"
+        as="a"
+      >
+        {t('call_to_action')}
+      </Button>
+    </Container>
   )
 }
 
