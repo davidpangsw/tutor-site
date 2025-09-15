@@ -1,0 +1,184 @@
+.aboutMeContainer {
+  padding: 2rem 0;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2c3e50;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.introductionSection {
+  margin-bottom: 3rem;
+}
+
+.introItem {
+  margin-bottom: 2rem;
+}
+
+.introTitle {
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #667eea;
+}
+
+.introContent {
+  color: #4a5568;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  white-space: pre-line;
+  text-align: justify;
+}
+
+.sectionCard {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  margin-bottom: 2rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.sectionCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ffeaa7, #fab1a0, #fd79a8, #e17055);
+}
+
+.cardContent {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 0;
+}
+
+.itemContainer {
+  padding: 2rem;
+  border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+  transition: all 0.3s ease;
+}
+
+.itemContainer:last-child {
+  border-bottom: none;
+}
+
+.itemContainer:hover {
+  background: rgba(102, 126, 234, 0.05);
+}
+
+.itemTitle {
+  color: #2c3e50;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.itemTitle::before {
+  content: '';
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  margin-right: 0.8rem;
+  border-radius: 2px;
+}
+
+.itemSubtitle {
+  color: #667eea;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.itemMeta {
+  color: #7a7a7a;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.itemScores {
+  color: #27ae60;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.itemDescription {
+  color: #4a5568;
+  line-height: 1.6;
+  white-space: pre-line;
+  text-align: justify;
+  margin-left: 1.2rem;
+}
+
+.experienceCard {
+  composes: sectionCard;
+}
+
+.qualificationCard {
+  composes: sectionCard;
+}
+
+@media (max-width: 768px) {
+  .aboutMeContainer {
+    padding: 1rem 0;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .introTitle {
+    font-size: 1.3rem;
+  }
+
+  .introContent {
+    font-size: 1rem;
+  }
+
+  .itemContainer {
+    padding: 1.5rem;
+  }
+
+  .itemTitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutMeContainer {
+    padding: 0.5rem 0;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .introTitle {
+    font-size: 1.2rem;
+  }
+
+  .itemContainer {
+    padding: 1rem;
+  }
+
+  .itemTitle {
+    font-size: 1.1rem;
+  }
+
+  .itemDescription {
+    margin-left: 0.8rem;
+  }
+}
