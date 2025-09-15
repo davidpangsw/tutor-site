@@ -9,16 +9,16 @@ import TutorWhyMe from './components/TutorWhyMe';
 import ContactCard from '@/app/utils/contacts/ContactCard';
 import TutorAboutMe from './components/TutorAboutMe';
 import TutorServiceCard from './components/TutorServiceCard';
-import WhyTutor from './components/WhyTutor';
 import TutorPriceCard from './components/TutorPriceCard';
 import TutorCallToAction from './components/TutorCallToAction';
 import TutorWhatIProvide from './components/TutorWhatIProvide';
+import styles from './HomePage.module.css';
 
 const photo = '/assets/photo.jpg';
 const HomePageIntro = () => {
   const t = useTranslations('home_page');
   return (
-    <p className='bona-nova-sc-regular'>{t('intro')}</p>
+    <p className={`bona-nova-sc-regular ${styles.introText}`}>{t('intro')}</p>
   );
 }
 /*
@@ -68,19 +68,19 @@ const HomePage = () => {
       </div>
       {/* <HomePageCards /> */}
       <div className='d-flex flex-column px-0 fs-6 m-0'>
-        <Row>
-          <Col className='d-flex justify-content-center' md={{ span: "auto", order: 1 }}>
+        <Row className={styles.firstRow}>
+          <Col className={styles.profileImageContainer} md={{ span: "auto", order: 1 }}>
             <Image
               src={photo}
               width="320"
               height="320"
-              style={{ borderRadius: "50%", maxWidth: "320px" }}
+              className={styles.profileImage}
               alt={'photo'}
             />
           </Col>
-          <Col md={{ order: 12 }}>
-            <h1 className='bona-nova-sc-bold'>David</h1>
-            <h6 className='bona-nova-sc-regular'>{t('STEM Tutor')}</h6>
+          <Col md={{ order: 12 }} className={styles.introSection}>
+            <h1 className={`bona-nova-sc-bold ${styles.nameTitle}`}>David</h1>
+            <h6 className={`bona-nova-sc-regular ${styles.jobTitle}`}>{t('STEM Tutor')}</h6>
             {/* <h6 className='bona-nova-sc-regular'>{t('Full-stack Developer')}</h6> */}
             <HomePageIntro />
           </Col>
