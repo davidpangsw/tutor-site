@@ -1,6 +1,6 @@
 "use client";
 import React, { useContext, useState } from 'react';
-import { Card, Col, Row, Table } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import { ContactContext } from './ContactContext';
 import { FaWeixin, FaEnvelope, FaCopy, FaPhone, FaWhatsapp } from 'react-icons/fa';
 import { useTranslations } from 'next-intl';
@@ -35,16 +35,18 @@ const ContactCard = (props: ContactCardProps) => {
   };
 
 
-  const data: { [key: string]: { label: string, value: string, url?: string, linkIcon: React.ReactNode | null } } = {
+  const data: { [key: string]: { label: string, value: string, copyValue?: string, url?: string, linkIcon: React.ReactNode | null } } = {
     'text': {
       label: 'phone (text-only)',
       value: text,
+      copyValue: text.replace(/[-\s()]/g, ''), // Remove hyphens, spaces, and parentheses for copying
       // url: '#',
       linkIcon: (<FaPhone />),
     },
     'whatsapp': {
       label: 'WhatsApp',
       value: text,
+      copyValue: text.replace(/[-\s()]/g, ''), // Remove hyphens, spaces, and parentheses for copying
       // url: `https://wa.me/${whatsapp}`,
       linkIcon: (<FaWhatsapp />),
     },
@@ -64,44 +66,63 @@ const ContactCard = (props: ContactCardProps) => {
 
   return (
     <div>
-      <h1>{t('title')}</h1>
-      <Card style={style}>
-        <Card.Header>{t('title')}</Card.Header>
-        <Card.Body className="py-0">
-          <Row>
-            <Col className="p-0" md={12}>
-              <Table>
-                <tbody>
-                  {Object.keys(data).map((name: string) => {
-                    const { label, value, url, linkIcon } = data[name];
-                    return (
-                      <tr key={name}>
-                        <td>
-                          <Link href="">
-                            <FaCopy onClick={() => copyToClipboard(label, value)} />
+      <Card style={style} className="shadow-sm border-0">
+        <Card.Header className="bg-primary text-white text-center py-3">
+          <h4 className="mb-0">{t('title')}</h4>
+        </Card.Header>
+        <Card.Body className="p-4">
+          <div className="contact-methods">
+            {Object.keys(data).map((name: string) => {
+              const { label, value, copyValue, url, linkIcon } = data[name];
+              return (
+                <div key={name} className="contact-item mb-3 p-3 rounded bg-light border">
+                  <div className="d-flex align-items-center justify-content-between">
+                    <div className="d-flex align-items-center flex-grow-1">
+                      <div className="contact-icon me-3 text-primary" style={{ fontSize: '1.5rem' }}>
+                        {url ? (
+                          <Link href={url} target={url ? "_blank" : "_self"} className="text-decoration-none text-primary">
+                            {linkIcon}
                           </Link>
-                        </td>
-                        <td>
-                          <Link href={url ?? '#'} target={url ? "_blank" : "_self"} > {linkIcon} </Link>
-                        </td>
-                        <td>
+                        ) : (
+                          linkIcon
+                        )}
+                      </div>
+                      <div className="contact-info flex-grow-1">
+                        <div className="contact-label text-muted small text-uppercase fw-bold">
+                          {t(label)}
+                        </div>
+                        <div className="contact-value fw-semibold">
                           {value}
-                        </td>
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </Table>
-              {copySuccess ?
-                (<Card.Text className="text-success">
-                  {copySuccess}
-                </Card.Text>) :
-                (<Card.Text className="text-info">
-                  Click <FaCopy /> to copy
-                </Card.Text>)
-              }
-            </Col>
-          </Row>
+                        </div>
+                      </div>
+                    </div>
+                    <button
+                      onClick={() => copyToClipboard(label, copyValue || value)}
+                      className="btn btn-outline-secondary btn-sm d-flex align-items-center"
+                      title={`Copy ${t(label)}`}
+                    >
+                      <FaCopy className="me-1" />
+                      <span className="d-none d-sm-inline">Copy</span>
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+          <div className="mt-3 text-center">
+            {copySuccess ? (
+              <div className="alert alert-success py-2 mb-0">
+                <small>{copySuccess}</small>
+              </div>
+            ) : (
+              <div className="text-muted">
+                <small>
+                  <FaCopy className="me-1" />
+                  Click copy button to copy contact information
+                </small>
+              </div>
+            )}
+          </div>
         </Card.Body>
       </Card>
     </div>
