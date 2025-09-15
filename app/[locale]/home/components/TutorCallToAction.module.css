@@ -1,25 +1,20 @@
 .callToActionSection {
-  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
-  border-radius: 20px;
+  background: white;
+  border: 2px solid #f8f9fa;
+  border-radius: 16px;
   padding: 3rem 2rem;
   margin: 2rem auto;
   text-align: center;
-  box-shadow: 0 15px 35px rgba(0, 123, 255, 0.15);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   position: relative;
-  overflow: hidden;
   width: 100%;
   max-width: 100%;
+  transition: all 0.3s ease;
 }
 
-.callToActionSection::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
-  pointer-events: none;
+.callToActionSection:hover {
+  border-color: #007bff;
+  box-shadow: 0 12px 35px rgba(0, 123, 255, 0.15);
 }
 
 .buttonContainer {
@@ -27,59 +22,56 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 1rem;
 }
 
 .callToActionButton {
-  background: rgba(255, 255, 255, 0.95) !important;
-  border: none !important;
-  color: #007bff !important;
+  background: #007bff !important;
+  border: 2px solid #007bff !important;
+  color: white !important;
   font-weight: 600 !important;
-  font-size: 1.25rem !important;
+  font-size: 1.1rem !important;
   padding: 1rem 2.5rem !important;
-  border-radius: 50px !important;
+  border-radius: 8px !important;
   text-decoration: none !important;
   display: inline-flex !important;
   align-items: center !important;
   gap: 0.5rem !important;
   transition: all 0.3s ease !important;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
-  position: relative;
-  z-index: 2;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2) !important;
 }
 
 .callToActionButton:hover {
   background: white !important;
-  color: #0056b3 !important;
-  transform: translateY(-3px) !important;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+  color: #007bff !important;
+  border-color: #007bff !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.25) !important;
 }
 
 .callToActionButton:active {
-  transform: translateY(-1px) !important;
+  transform: translateY(0px) !important;
 }
 
 .highlightText {
-  color: white;
-  font-size: 1.4rem;
-  margin-bottom: 1.5rem;
+  color: #2c3e50;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
   font-weight: 500;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 2;
+  line-height: 1.5;
 }
 
 .discountBadge {
-  background: #ffc107;
-  color: #212529;
-  font-size: 0.9rem;
-  font-weight: 700;
-  padding: 0.3rem 0.8rem;
-  border-radius: 20px;
+  background: #28a745;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
   display: inline-block;
   margin-left: 0.5rem;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
