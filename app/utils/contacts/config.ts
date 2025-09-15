@@ -6,7 +6,7 @@ interface IContact {
 }
 
 const CONTACTS: IContact = {
-  text: '778-316-4509',
+  text: '123-456-7890',
   wechat: 'davidvancouvertutor',
   wechat_url: 'https://u.wechat.com/kGjdNybM2wYC-AMUSGyGrvc',
   email: 'davidpangsw@hotmail.com',
