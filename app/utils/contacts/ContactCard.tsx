@@ -2,7 +2,7 @@
 import React, { useContext, useState } from 'react';
 import { Card } from 'react-bootstrap';
 import { ContactContext } from './ContactContext';
-import { FaWeixin, FaEnvelope, FaCopy, FaPhone, FaWhatsapp } from 'react-icons/fa';
+import { FaWeixin, FaEnvelope, FaCopy } from 'react-icons/fa';
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
 interface ContactCardProps {
@@ -19,7 +19,7 @@ const ContactCard = (props: ContactCardProps) => {
     throw new Error("ContactContext is undefined. (Is it wrapped by Provider?");
   }
   const { contacts } = context;
-  const { text, wechat, email } = contacts;
+  const { wechat, email } = contacts;
   const [copySuccess, setCopySuccess] = useState('');
   const copyToClipboard = async (label: string, text: string) => {
 
@@ -36,20 +36,6 @@ const ContactCard = (props: ContactCardProps) => {
 
 
   const data: { [key: string]: { label: string, value: string, copyValue?: string, url?: string, linkIcon: React.ReactNode | null } } = {
-    'text': {
-      label: 'phone (text-only)',
-      value: text,
-      copyValue: text.replace(/[-\s()]/g, ''), // Remove hyphens, spaces, and parentheses for copying
-      // url: '#',
-      linkIcon: (<FaPhone />),
-    },
-    'whatsapp': {
-      label: 'WhatsApp',
-      value: text,
-      copyValue: text.replace(/[-\s()]/g, ''), // Remove hyphens, spaces, and parentheses for copying
-      // url: `https://wa.me/${whatsapp}`,
-      linkIcon: (<FaWhatsapp />),
-    },
     'wechat': {
       label: 'WeChat',
       value: wechat,
@@ -102,7 +88,7 @@ const ContactCard = (props: ContactCardProps) => {
                       title={`Copy ${t(label)}`}
                     >
                       <FaCopy className="me-1" />
-                      <span className="d-none d-sm-inline">Copy</span>
+                      <span className="d-none d-sm-inline">{t('copy')}</span>
                     </button>
                   </div>
                 </div>
@@ -118,7 +104,7 @@ const ContactCard = (props: ContactCardProps) => {
               <div className="text-muted">
                 <small>
                   <FaCopy className="me-1" />
-                  Click copy button to copy contact information
+                  {t('clickToCopy')}
                 </small>
               </div>
             )}

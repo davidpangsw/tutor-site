@@ -2,8 +2,8 @@
   "title": "Contact",
   "copySuccess": "{label} copied to clipboard!",
   "apiNotAvailable": "Error: Clipboard API is not available.",
-  "phone (text-only)": "Phone (text-only)",
-  "WhatsApp": "WhatsApp",
+  "clickToCopy": "Click copy button to copy contact information",
+  "copy": "Copy",
   "WeChat": "WeChat",
   "Email": "Email"
 }
