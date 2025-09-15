@@ -1,6 +1,7 @@
 import { useTranslations } from 'next-intl';
 import React from 'react';
 import { Card, Row, Col, Container, CardBody, CardHeader } from 'react-bootstrap';
+import styles from './TutorPriceCard.module.css';
 
 const OneToOneServiceCard = () => {
   const t = useTranslations('your_tutor_page.tutorPriceCard.oneToOneServiceCard');
@@ -8,12 +9,12 @@ const OneToOneServiceCard = () => {
   const discount = "50";
   const minHours = 1.5;
   return (
-    <Card className='p-0'>
-      <CardHeader>
+    <Card className={`${styles.serviceCard} p-0`}>
+      <CardHeader className={styles.cardHeader}>
         {t('title')}
       </CardHeader>
-      <CardBody>
-        <h5>
+      <CardBody className={styles.cardBody}>
+        <h5 className={styles.priceText}>
           {t('body', { price, discount, minHours })}
         </h5>
       </CardBody>
@@ -27,12 +28,12 @@ const OneToTwoServiceCard = () => {
   const discount = "50";
   const minHours = 1.5;
   return (
-    <Card className='p-0'>
-      <CardHeader>
+    <Card className={`${styles.serviceCard} p-0`}>
+      <CardHeader className={styles.cardHeader}>
         {t('title')}
       </CardHeader>
-      <CardBody>
-        <h5>
+      <CardBody className={styles.cardBody}>
+        <h5 className={styles.priceText}>
           {t('body', { price, discount, minHours })}
         </h5>
       </CardBody>
@@ -43,12 +44,12 @@ const OneToTwoServiceCard = () => {
 const TutoringCenterEmploymentCard = () => {
   const t = useTranslations('your_tutor_page.tutorPriceCard.tutoringCenterEmploymentCard');
   return (
-    <Card className='p-0'>
-      <CardHeader>
+    <Card className={`${styles.serviceCard} p-0`}>
+      <CardHeader className={styles.cardHeader}>
         {t('title')}
       </CardHeader>
-      <CardBody>
-        <h5>
+      <CardBody className={styles.cardBody}>
+        <h5 className={styles.priceText}>
           {t('body')}
         </h5>
       </CardBody>
@@ -60,19 +61,19 @@ const TutorPriceCard = () => {
   // const c = useTranslations('common');
   const t = useTranslations('your_tutor_page.tutorPriceCard');
   return (
-    <div>
-      <h1>{t('title')}</h1>
-      <Card className="p-3">
+    <div className={styles.priceCardContainer}>
+      <h1 className={styles.title}>{t('title')}</h1>
+      <Card className={styles.mainCard}>
         <Container>
-          <Row>
-            <Col md={4}>
-              <Row className='p-3'><OneToOneServiceCard /></Row>
+          <Row className={styles.servicesGrid}>
+            <Col>
+              <OneToOneServiceCard />
             </Col>
-            <Col md={4}>
-              <Row className='p-3'><OneToTwoServiceCard /></Row>
+            <Col>
+              <OneToTwoServiceCard />
             </Col>
-            <Col md={4}>
-              <Row className='p-3'><TutoringCenterEmploymentCard /></Row>
+            <Col>
+              <TutoringCenterEmploymentCard />
             </Col>
             {/* <Col
               md={6}
